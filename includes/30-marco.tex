@@ -7,8 +7,12 @@
 \author{יואב מרקו}
 
 \begin{document}
-\maketitle
+‏\section{משפט הגבול המרכזי}
+יהיו $X_{1},...,X_{n}$ מ“מ ב“ת שווי התפלגות בעלי שונות
+סופית, אזי המ“מ המוגדר $\widehat{S_{n}}=\frac{\sum_{i=1}^{n}X_{i}-n\EX\left[X_{1}\right]}{\sqrt{n\Var\left(X_{1}\right)}}$
+(תוחלתו 0, שונות 1) מתכנס בהתפלגות להתפלגות גאוסיאנית, כלומר:
 
-בדיקת מרקו
+\[\forall -\infty\leq a<b\leq\infty.\
+  P\left(a\leq\widehat{S_{n}}\leq b\right)=\frac{1}{\sqrt{2\pi}}\int_{a}^{b}e^{\frac{-x^{2}}{2}}dx=\varPhi\left(b\right)-\varPhi\left(a\right)\]
 
 \end{document}
