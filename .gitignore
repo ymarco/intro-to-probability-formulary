@@ -21,6 +21,8 @@
 *.ilg
 *.toc
 *.ind
-
-*.lyx_tex
+*.pdf
+.auctex-auto/*
+_region_.tex
+includes.tex
 *.bare_tex

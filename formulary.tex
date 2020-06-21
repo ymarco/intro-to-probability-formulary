@@ -1,0 +1,50 @@
+\documentclass[twocolumn]{article}
+\usepackage[a4paper,margin=0.15in]{geometry} % margins setup
+\usepackage{preamble}
+
+\newcommand{\newformula}{\noindent\rule{0.5\textwidth}{0.4pt}\par}
+
+% override theorem envs from my preamble not to include numbering
+\newcommand{\unnumbertheorem}[2]{
+  \expandafter\let\csname #1\endcsname\undefined
+  \expandafter\let\csname end#1\endcsname\undefined
+  \newtheorem*{#1}{#2}
+}
+\newtheoremstyle{all}% name
+{1pt}% Space above
+{0pt}% Space below
+{}% Body font
+{}% Indent amount
+{\bfseries}% Theorem head font
+{:}% Punctuation after theorem head
+{.5em}% Space after theorem head
+{}% Theorem head spec (includes/00-test.bare_tex can be left empty, meaning 'normal')
+\theoremstyle{all}
+\unnumbertheorem{definition}{הגדרה}
+\unnumbertheorem{lemma}{למה}
+\unnumbertheorem{theorem}{משפט}
+\unnumbertheorem{claim}{טענה}
+
+
+% reduce spacing around display math
+\AtBeginDocument{
+  \abovedisplayskip=4pt plus 3pt minus 4pt
+  \abovedisplayshortskip=0pt plus 3pt
+  \belowdisplayskip=4pt plus 3pt minus 4pt
+  \belowdisplayshortskip=7pt plus 3pt minus 7pt
+
+  % \setlength{\abovedisplayskip}{0em}
+  % \setlength{\abovedisplayshortskip}{0em}
+  % \setlength{\belowdisplayskip}{0em}
+  % \setlength{\belowdisplayshortskip}{0em}
+}
+
+
+\title{דף נוסחאות בדיקה}
+
+\begin{document}
+\maketitle
+
+\input{includes}
+
+\end{document}
