@@ -171,7 +171,7 @@ theorems-ams-extended
 
  מאורע מהסתברות חיובית.
  אזי 
-\begin_inset Formula $\left(\Omega,P\left(\cdot|B\right)\right)$
+\begin_inset Formula $\left(\Omega,P\left(\cdot\mid B\right)\right)$
 \end_inset
 
  מרחב הסתברות מותנה ב-
@@ -179,14 +179,14 @@ theorems-ams-extended
 \end_inset
 
  המוגדר 
-\begin_inset Formula $P\left(\omega|B\right)=\begin{cases}
+\begin_inset Formula $P\left(\omega\mid B\right)=\begin{cases}
 \frac{P\left(\omega\right)}{P\left(B\right)} & \omega\in B\\
 0 & \omega\notin B
 \end{cases}$
 \end_inset
 
 , לכן 
-\begin_inset Formula $P\left(A|B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}$
+\begin_inset Formula $P\left(A\mid B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}$
 \end_inset
 
 
@@ -219,7 +219,7 @@ theorems-ams-extended
 נוסחת ההסתברות השלמה: 
 \series default
 
-\begin_inset Formula $P\left(A\right)=\sum_{i=1}^{n}P\left(B_{i}\right)P\left(A|B_{i}\right)$
+\begin_inset Formula $P\left(A\right)=\sum_{i=1}^{n}P\left(B_{i}\right)P\left(A\mid B_{i}\right)$
 \end_inset
 
 .
@@ -228,7 +228,7 @@ theorems-ams-extended
 חוק בייז: 
 \series default
 
-\begin_inset Formula $P\left(B_{j}|A\right)=\frac{P\left(B_{j}\right)P\left(A|B_{j}\right)}{\sum_{j\neq i=1}^{n}P\left(B_{i}\right)P\left(A|B_{i}\right)}$
+\begin_inset Formula $P\left(B_{j}\mid A\right)=\frac{P\left(B_{j}\right)P\left(A\mid B_{j}\right)}{\sum_{j\neq i=1}^{n}P\left(B_{i}\right)P\left(A\mid B_{i}\right)}$
 \end_inset
 
 
@@ -245,7 +245,7 @@ theorems-ams-extended
 \end_inset
 
  אזי 
-\begin_inset Formula $P\left(\bigcap_{k=1}^{n}A_{k}\right)=\prod_{k=1}^{n}P\left(A_{k}|\bigcap_{i=1}^{k-1}A_{k}\right)$
+\begin_inset Formula $P\left(\bigcap_{k=1}^{n}A_{k}\right)=\prod_{k=1}^{n}P\left(A_{k}\mid \bigcap_{i=1}^{k-1}A_{k}\right)$
 \end_inset
 
 
@@ -262,7 +262,7 @@ theorems-ams-extended
 \end_inset
 
  אם 
-\begin_inset Formula $P\left(A\cap B|C\right)=P\left(A|C\right)\cdot P\left(B|C\right)$
+\begin_inset Formula $P\left(A\cap B\mid C\right)=P\left(A\mid C\right)\cdot P\left(B\mid C\right)$
 \end_inset
 
 
@@ -450,7 +450,7 @@ theorems-ams-extended
 \end_inset
 
  או באופן שקול 
-\begin_inset Formula $P\left(A\right)=P\left(A|B\right)$
+\begin_inset Formula $P\left(A\right)=P\left(A\mid B\right)$
 \end_inset
 
 
@@ -890,7 +890,7 @@ theorems-ams-extended
 \end_inset
 
  בדיד )
-\begin_inset Formula $supp\left(X\right)=\left\{ \omega\in\Omega|X\left(\omega\right)\neq0\right\} $
+\begin_inset Formula $supp\left(X\right)=\left\{ \omega\in\Omega\mid X\left(\omega\right)\neq0\right\} $
 \end_inset
 
  בן מניה( ואי שלילי, אזי 
@@ -1429,7 +1429,7 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 \end_inset
 
  מוגדרת כ
-\begin_inset Formula $E\left[X|A\right]=\sum_{\omega\in\Omega}X\left(\omega\right)P\left(\omega|A\right)=\sum_{k\in Supp\left(X\right)}k\cdot P\left(X=k|A\right)$
+\begin_inset Formula $E\left[X\mid A\right]=\sum_{\omega\in\Omega}X\left(\omega\right)P\left(\omega\mid A\right)=\sum_{k\in Supp\left(X\right)}k\cdot P\left(X=k\mid A\right)$
 \end_inset
 
 
@@ -1450,11 +1450,11 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 \end_inset
 
  אזי 
-\begin_inset Formula $E\left[X|Y\right]$
+\begin_inset Formula $E\left[X\mid Y\right]$
 \end_inset
 
  הוא משתנה מקרי גם כן כך ש
-\begin_inset Formula $E\left[X|Y\right]\left(\omega\right)=E\left[X|Y=Y\left(\omega\right)\right]$
+\begin_inset Formula $E\left[X\mid Y\right]\left(\omega\right)=E\left[X\mid Y=Y\left(\omega\right)\right]$
 \end_inset
 
 , אם 
@@ -1508,15 +1508,15 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 \end_inset
 
  בעל תוחלת סופית אזי 
-\begin_inset Formula $E\left[E\left[X|Y\right]\right]=E\left[X\right]$
+\begin_inset Formula $E\left[E\left[X\mid Y\right]\right]=E\left[X\right]$
 \end_inset
 
  וכן 
-\begin_inset Formula $E\left[X\right]=\sum_{k\in Im\left(Y\right)}E\left[X|Y=K\right]P\left(Y=k\right)$
+\begin_inset Formula $E\left[X\right]=\sum_{k\in Im\left(Y\right)}E\left[X\mid Y=K\right]P\left(Y=k\right)$
 \end_inset
 
  וכן 
-\begin_inset Formula $E\left[X|A\right]=\frac{E\left[X\cdot1_{A}\right]}{P\left(A\right)}$
+\begin_inset Formula $E\left[X\mid A\right]=\frac{E\left[X\cdot1_{A}\right]}{P\left(A\right)}$
 \end_inset
 
 .
@@ -1524,11 +1524,11 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 
 \begin_deeper
 \begin_layout Claim*
-\begin_inset Formula $E\left[aX_{1}+bX_{2}|Y\right]=aE\left[X_{1}|Y\right]+bE\left[x_{2}|Y\right]$
+\begin_inset Formula $E\left[aX_{1}+bX_{2}\mid Y\right]=aE\left[X_{1}\mid Y\right]+bE\left[x_{2}\mid Y\right]$
 \end_inset
 
 , 
-\begin_inset Formula $E\left[X\cdot f\left(Y\right)|Y\right]=f\left(Y\right)E\left[X|Y\right]$
+\begin_inset Formula $E\left[X\cdot f\left(Y\right)\mid Y\right]=f\left(Y\right)E\left[X\mid Y\right]$
 \end_inset
 
 
@@ -1545,7 +1545,7 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 \end_inset
 
 ל 
-\begin_inset Formula $P\left(E\left[X|Y\right]=E\left[X\right]\right)=1$
+\begin_inset Formula $P\left(E\left[X\mid Y\right]=E\left[X\right]\right)=1$
 \end_inset
 
 
@@ -1638,7 +1638,7 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 \end_inset
 
  מתפלג גיאומטרי 
-\begin_inset Formula $P\left(X=n+k|X>n\right)=P\left(X=k\right)$
+\begin_inset Formula $P\left(X=n+k\mid X>n\right)=P\left(X=k\right)$
 \end_inset
 
 
@@ -1727,7 +1727,7 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 
 .
  
-\begin_inset Formula $P\left(X=Y\right)=1-p-q+2pq,P\left(X>Y\right)=p\left(1-q\right),E\left[X|X>Y\right]=\frac{pq}{P\left(X=Y\right)}$
+\begin_inset Formula $P\left(X=Y\right)=1-p-q+2pq,P\left(X>Y\right)=p\left(1-q\right),E\left[X\mid X>Y\right]=\frac{pq}{P\left(X=Y\right)}$
 \end_inset
 
 
@@ -1751,7 +1751,7 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 \end_inset
 
  ו-
-\begin_inset Formula $E\left[X|X=Y\right]=E\left[\min\left(X,Y\right)\right]$
+\begin_inset Formula $E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]$
 \end_inset
 
 
