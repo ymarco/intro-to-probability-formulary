@@ -1,4 +1,4 @@
-\documentclass[twocolumn]{article}
+\documentclass[8pt,twocolumn]{extarticle}
 \usepackage[a4paper,margin=0.15in]{geometry} % margins setup
 \usepackage{preamble}
 
@@ -51,6 +51,13 @@
   % \setlength{\belowdisplayshortskip}{0em}
 }
 
+\makeatletter
+\setcounter{secnumdepth}{0}
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+  {-4.5ex \@plus -1ex \@minus -.2ex}%
+  {0.3ex \@plus.2ex}%
+                                     {\normalfont\large\bfseries\center}}
+\makeatother
 
 \title{דף נוסחאות בדיקה}
 

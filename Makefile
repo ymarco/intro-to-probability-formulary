@@ -21,7 +21,20 @@ includes/%.bare_tex: includes/%.tex
 	cat $< |\
 		tr '\n' '\r' |\
 		sed 's/^.*\\begin{document}//' |\
-		tr '\r' '\n' | sed 's/\\end{document}//' > $@
+		tr '\r' '\n' |\
+		sed -e 's/Ber\b/\\Ber/g' \
+			-e 's/\\end{document}//' \
+			-e 's/Bin\b/\\Bin/g' \
+			-e 's/Cov\b/\\Cov/g' \
+			-e 's/Geom\b/\\Geom/g' \
+			-e 's/HyperGeom\b/\\HyperGeom/g' \
+			-e 's/NB\b/\\NB/g'   \
+			-e 's/Poi\b/\\Poi/g' \
+			-e 's/Rank\b/\\Rank/g' \
+			-e 's/Uniform\b/\\Uniform/g' \
+			-e 's/Var\b/\\Var/g' \
+			-e 's/std\b/\\std/g' \
+			-e 's/supp\b/\\supp/g' > $@
 
 
 # it is what it is
