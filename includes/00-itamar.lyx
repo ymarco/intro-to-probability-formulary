@@ -1722,7 +1722,7 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 \end_inset
 
 ת אזי 
-\begin_inset Formula $min\left\{ X,Y\right\} \sim Ber\left(pq\right),max\left\{ X,Y\right\} \sim Ber\left(\left(1-p\right)\left(1-q\right)\right)$
+\begin_inset Formula $\min\left\{ X,Y\right\} \sim Ber\left(pq\right),\max\left\{ X,Y\right\} \sim Ber\left(\left(1-p\right)\left(1-q\right)\right)$
 \end_inset
 
 .
@@ -1743,7 +1743,7 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 \end_inset
 
 ת אזי 
-\begin_inset Formula $min\left(X,Y\right)\sim Geo\left(p+q-pq\right)$
+\begin_inset Formula $\min\left(X,Y\right)\sim Geo\left(p+q-pq\right)$
 \end_inset
 
 , 
@@ -1751,7 +1751,7 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 \end_inset
 
  ו-
-\begin_inset Formula $E\left[X|X=Y\right]=E\left[min\left(X,Y\right)\right]$
+\begin_inset Formula $E\left[X|X=Y\right]=E\left[\min\left(X,Y\right)\right]$
 \end_inset
 
 
