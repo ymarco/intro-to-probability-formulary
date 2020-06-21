@@ -245,7 +245,7 @@ theorems-ams-extended
 \end_inset
 
  אזי 
-\begin_inset Formula $P\left(\bigcap_{k=1}^{n}A_{k}\right)=\prod_{k=1}^{n}P\left(A_{k}\mid \bigcap_{i=1}^{k-1}A_{k}\right)$
+\begin_inset Formula $P\left(\bigcap_{k=1}^{n}A_{k}\right)=\prod_{k=1}^{n}P\left(A_{k}\mid\bigcap_{i=1}^{k-1}A_{k}\right)$
 \end_inset
 
 
@@ -1203,15 +1203,12 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 
 \begin_deeper
 \begin_layout Claim*
-\begin_inset Formula $Var\left(aX\right)=a^{2}Var\left(X\right)$
-\end_inset
+\begin_inset Formula 
+\begin{align*}
+Var\left(aX\right) & =a^{2}Var\left(X\right) & std(aX) & =\left|a\right|std\left(X\right)\\
+Var\left(a+X\right) & =Var\left(X\right) & std\left(a+X\right) & =std\left(X\right)
+\end{align*}
 
-, 
-\begin_inset Formula $std\left(aX\right)=\left|a\right|std\left(X\right)$
-\end_inset
-
-, 
-\begin_inset Formula $Var\left(a+X\right)=Var\left(X\right)$
 \end_inset
 
 
