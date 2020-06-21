@@ -1,9 +1,11 @@
 LATEX=latexmk -pdf -xelatex
 
+LYXS=$(wildcard includes/*.lyx)
+LYXINCLUDES=$(patsubst %.lyx,%.bare_tex,$(LYXS))
 
 formulary.pdf: formulary.tex includes.tex
 
-includes.tex: includes/30-marco.bare_tex
+includes.tex: $(LYXINCLUDES) includes/30-marco.tex
 	ls includes/*.bare_tex | sed 's/\(.*\)/\\input{\1}/' > $@
 
 %.pdf: %.tex
@@ -19,7 +21,7 @@ includes/%.bare_tex: includes/%.tex
 	cat $< |\
 		tr '\n' '\r' |\
 		sed 's/^.*\\begin{document}//' |\
-		tr '\r' '\n' | sed -e 's/\\begin{document}//' -e 's/\\end{document}//' > $@
+		tr '\r' '\n' | sed 's/\\end{document}//' > $@
 
 
 # it is what it is
