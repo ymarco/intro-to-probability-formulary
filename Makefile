@@ -5,7 +5,7 @@ LYXINCLUDES=$(patsubst %.lyx,%.bare_tex,$(LYXS))
 
 formulary.pdf: formulary.tex includes.tex
 
-includes.tex: $(LYXINCLUDES) includes/30-marco.tex
+includes.tex: $(LYXINCLUDES) includes/30-marco.bare_tex
 	ls includes/*.bare_tex | sed 's/\(.*\)/\\input{\1}/' > $@
 
 %.pdf: %.tex
