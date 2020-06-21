@@ -12,7 +12,7 @@ includes.tex: $(LYXINCLUDES) includes/30-marco.tex
 	$(LATEX) $< -jobname=$(basename $@ .pdf)
 
 includes/%.tex: includes/%.lyx
-	lyx --export latex $<
+	lyx --export latex $< || lyx --export xetex $<
 
 # remove newlines so sed can work multiline, cut everyting until
 # \begin{document}, add newlines back and remove the outside document env. Now
