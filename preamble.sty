@@ -1,0 +1,220 @@
+% Marco's preamble file
+% - Importing Packages
+% - Configuring Hebrew for PDFTeX and XeTeX
+% - defining theorem classes with amsthm as an option
+
+% My Hebrew compilation is usually done through XeLaTeX (using polyglossia).
+% However, the preamble DOES compile with PDFLaTeX, in case I need quick
+% compilation for math previews etc.
+%
+% Advantages and disadvantages of XeLaTeX:
+% + hyperref works (babel in PDFLaTeX screws up hyperref compilation)
+% + amsmthm works (babel screws this up also, there might be a fix but I'm lazy)
+% + Parentheses don't get swapped as in PDFLaTeX
+% + Modern font support. Wanna do some שמשון שמן?
+% - ...About x7 compilation time compared to PDFLaTeX
+% - Less support from microtype (https://ctan.org/pkg/microtype)
+
+\ProvidesPackage{preamble}
+
+
+% Do different stuff depending on the compiler.
+% I heavily use this in order to set up Hebrew in both PDFLaTex and XeTeX.
+\RequirePackage{iftex}
+
+\RequirePackage{amsmath}                        % math envs: align, gather...
+\RequirePackage{amssymb}                        % math symbols
+\RequirePackage{mathtools}                      % overbrace, multilined
+\RequirePackage{breqn}                              % better line breaks in math
+\@ifpackageloaded{geometry}{}{
+	\RequirePackage[a4paper,margin=1.1in]{geometry} % margins setup
+}
+% \RequirePackage{cancel}                         % "cancel" math command
+% \RequirePackage[section]{placeins}              % floats don't overflow to sections
+% \RequirePackage{comment}                        % adds a comment environment to mass-comment lines
+\RequirePackage{xcolor}
+
+% optional tikz setpu
+
+\@ifpackageloaded{tikz}{
+  % FIXME this is supposed to set a global scale to tikz but currently does
+  % nothing.
+  % https://tex.stackexchange.com/questions/6388/how-to-scale-a-tikzpicture-to-textwidth
+  \tikzset{global scale/.style={
+	  scale=0.7\textwidth/2cm,
+	  % every node/.style={scale=#1}
+	}}
+  % set background overlay from page #1 of \exfile.
+  \newcommand{\@backgroundex}[1]{%
+	\tikz[remember picture,overlay]
+	\node[opacity=0.75,inner sep=0pt] at (current page.center)
+	{\includegraphics[width=\paperwidth,height=\paperheight,page=#1]{\exfile}};
+  }
+  % set current excersize to #1th page of \exfile, and add #2 space.
+  \newcommand{\currentex}[2]{\newpage\@backgroundex{#1}\vspace{#2}}
+}{}
+\ifPDFTeX \def\currentex{}\fi
+
+
+\setlength{\parindent}{0pt} % no paragraph indentation
+\setlength{\parskip}{2pt} % to replace parindent
+
+% reduce spacing of \left \right pairs
+% https://tex.stackexchange.com/a/64960
+\let\originalleft\left
+\let\originalright\right
+\renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
+\renewcommand{\right}{\aftergroup\egroup\originalright}
+
+
+
+
+% Here comes a some spaghetti around theorem envs.
+% reason is, we can only load amsthm in XeTeX, but also want to compile with
+% PDFTeX for its speed, from time to time.
+% so this is a workaround, using amsthm features only if compiling with XeTeX.
+% \begin{mess}
+
+\ifXeTeX \RequirePackage{amsthm} \fi % In XeTeX, amsthm is safe to load
+% Theorem-like environments
+\newtheorem{theorem}{משפט}[section]
+\newtheorem{lemma}[theorem]{למה}
+
+\ifXeTeX \theoremstyle{definition} \fi % \theoremstyle is only in amsthm => XeTeX
+\newtheorem{definition}[theorem]{הגדרה}
+
+\ifXeTeX % \newtheorem* is defined only in XeTeX with amsthm,
+	\newtheorem*{corollary}{מסקנה}
+	\newtheorem*{examples}{דוגמאות}
+	\newtheorem*{example}{דוגמא}
+	\newtheorem*{exercise}{תרגיל}
+	\newtheorem*{reminder}{תזכורת}
+	\newtheorem*{solution}{פתרון}
+\fi \ifPDFTeX % same without *
+	\newtheorem{corollary}{מסקנה}
+	\newtheorem{examples}{דוגמאות}
+	\newtheorem{example}{דוגמא}
+	\newtheorem{exercise}[theorem]{תרגיל}
+	\newtheorem{reminder}{תזכורת}
+	\newtheorem{solution}{פתרון}
+\fi
+
+\ifXeTeX \theoremstyle{remark} \fi % \theoremstyle is only in amsthm = XeTeX
+\newtheorem{claim}[theorem]{טענה}
+
+\ifXeTeX % again, \newtheorem* is defined only in XeTeX with amsthm,
+	\newtheorem*{remark}{הערות}
+\fi \ifPDFTeX % same without *
+	\newtheorem{remark}{הערות}
+\fi
+
+\ifPDFTeX \newtheorem{proof}{הוכחה} \fi % in amsthm, proof is defined for us. here we define it manually
+% \end{mess}
+
+
+% On to actual stuff:
+\ifXeTeX
+	% hyperref works in XeTeX
+	\RequirePackage[colorlinks, linkcolor={cyan!35!black}]{hyperref}
+
+	% Hebrew config
+	% Important to load bidi (through polyglossia) last, it needs to detect and
+	% configure your previous packages.
+	\RequirePackage{polyglossia}
+	\setmainlanguage{hebrew}
+	\setotherlanguage{english}
+	\newfontfamily{\hebrewfont}[Script=Hebrew,AutoFakeSlant=0.15]{David CLM}
+    % \setmainfont[Script=Hebrew]{DejaVu Sans}
+
+	% David CLM doesn't have a bullet symbol, use the math one
+	\renewcommand{\labelitemi}{$\bullet$}
+	% used to put hebrew in math
+	\newcommand{\mathhebrew}[1]{\text{\textenglish{\texthebrew{#1}}}}
+	% \setmonofont[Script=Hebrew]{Inconsolata}
+	% \setmonofont[Script=English]{Inconsolata}
+
+	% redefining \maketitle to also set the pdf metadata options for hyperref
+	\newcommand\org@maketitle{}
+	\let\org@maketitle\maketitle
+	\renewcommand\maketitle{
+	\hypersetup{
+		pdftitle={\@title},
+		pdfauthor={\@author},
+		pdfcreator={Doom Emacs, XeLaTeX and Hyperref}
+	}
+\org@maketitle
+	}
+	% fix for equation numbering in BiDi https://tex.stackexchange.com/a/141437
+	\def\tagform@#1{\maketag@@@{(\ignorespaces#1\unskip)}}
+\fi
+
+\ifPDFTeX
+	% Hebrew config
+	\RequirePackage{ucs}
+	\RequirePackage[utf8x]{inputenc}
+	% Don't complain about hyphenation patterns for Hebrew
+	\let\l@hebrew\l@nohyphenation
+	\RequirePackage[english,hebrew]{babel}
+	\newcommand{\mathhebrew}[1]{\text{\R{#1}}}
+	% Usually I use the xetex poliglassia api, which uses english envs.
+	\newenvironment{english}{\begin{otherlanguage}{english}}{\end{otherlanguage}}
+	\newcommand{\textenglish}[1]{\L{#1}}
+	% Doesn't hurt
+	\newenvironment{hebrew}{\begin{otherlanguage}{hebrew}}{\end{otherlanguage}}
+	\newcommand{\texthebrew}[1]{\R{#1}}
+\fi
+
+% theorem frame:
+% https://tex.stackexchange.com/a/86389/
+
+\definecolor{BGLight}{HTML}{FAFAFA}
+
+% https://www.reddit.com/r/LaTeX/comments/g51dnu/tomorrow_is_the_first_time_i_lecture_in/
+\definecolor{theme1}{HTML}{FF7878}
+\definecolor{theme2}{HTML}{51B5F8}
+\definecolor{theme3}{HTML}{68E1AA}
+\definecolor{theme4}{HTML}{B869EA}
+\definecolor{theme5}{HTML}{FF5500}
+
+% Colours taken from @tecosaur's bmc class, 'de' colorscheme.
+\definecolor  {White}      {HTML}{FCFCFC}
+\definecolor  {LightGray}  {HTML}{a5b1c2}
+\definecolor  {Gray}       {HTML}{778ca3}
+\definecolor  {DarkGray}   {HTML}{4b6584}
+\definecolor  {Black}      {HTML}{231F20}
+% Primary Colours
+\definecolor  {Red}        {HTML}{eb3b47}
+\definecolor  {LightRed}   {HTML}{fc5c65}
+\definecolor  {DarkRed}    {HTML}{d91c38}
+
+\definecolor  {Yellow}     {HTML}{f7b731}
+\definecolor  {LightYellow}{HTML}{fed330}
+\definecolor  {DarkYellow} {HTML}{f0a132}
+
+\definecolor  {Blue}       {HTML}{3867d6}
+\definecolor  {LightBlue}  {HTML}{4b7bec}
+\definecolor  {DarkBlue}   {HTML}{2654bf}
+% tertiary Colours
+\definecolor  {Green}      {HTML}{20bf6b}
+\definecolor  {LightGreen} {HTML}{26de81}
+\definecolor  {DarkGreen}  {HTML}{1ba155}
+
+\definecolor  {Orange}     {HTML}{fa8231}
+\definecolor  {LightOrange}{HTML}{fd9644}
+\definecolor  {DarkOrange} {HTML}{f76b20}
+
+\definecolor  {Purple}     {HTML}{8854d0}
+\definecolor  {LightPurple}{HTML}{a55eea}
+\definecolor  {DarkPurple} {HTML}{6e49b8}
+% secondary+ Colours
+\definecolor  {Cyan}       {HTML}{0fb9b1}
+\definecolor  {LightCyan}  {HTML}{2bcbba}
+\definecolor  {DarkCyan}   {HTML}{00a8a8}
+
+% \newenvironment{presentation_definition}{
+%   \begin{tcolorbox}[colback=col4!10, colframe=col4!50, coltitle=col4!30!black, fonttitle=\bfseries, title=Definition]
+% } {
+%   \end{tcolorbox}
+% }
+
+\RequirePackage{macros}
