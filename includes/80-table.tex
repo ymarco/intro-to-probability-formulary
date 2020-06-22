@@ -1,0 +1,109 @@
+\documentclass[8pt,twocolumn]{extarticle}
+\usepackage{rotating}
+\usepackage{nicefrac}
+\usepackage{preamble}
+
+
+\title{30 Marco}
+\author{יואב מרקו}
+
+\begin{document}
+‏\section{משפט הגבול המרכזי}
+יהיו $X_{1},...,X_{n}$ מ“מ ב“ת שווי התפלגות בעלי שונות
+סופית, אזי המ“מ המוגדר $\widehat{S_{n}}=\frac{\sum_{i=1}^{n}X_{i}-n\EX\left[X_{1}\right]}{\sqrt{n\Var\left(X_{1}\right)}}$
+(תוחלתו 0, שונות 1) מתכנס בהתפלגות להתפלגות גאוסיאנית, כלומר:
+
+\[\forall -\infty\leq a<b\leq\infty.\
+  P\left(a\leq\widehat{S_{n}}\leq b\right)=\frac{1}{\sqrt{2\pi}}\int_{a}^{b}e^{\frac{-x^{2}}{2}}dx=\varPhi\left(b\right)-\varPhi\left(a\right)\]
+
+‏\section{אי שוויונות} ‏\begin{claim}[א"ש מרקוב]
+  אם ‎\(X\geq 0\) מ"מ עם תוחלת סופית אז לכל ‎\(t>0\) מתקיים
+  % manual linebreak, otherwise breqn breaks it at the t) which is damn ugly
+  ‎\(P(X\geq t)\\ \leq  \frac{\EX[X]}{t}\).
+
+  אלטרנטיבית, ‎\(P(X \geq t \EX[X]) \leq \frac{1}{t}\) ‏\end{claim}
+‏\begin{claim}[א"ש צ'בישב] אם ‎\(X\geq 0\) מ"מ עם תוחלת ושונות סופיים
+  אז לכל ‎\(t>0\) מתקיים ‎\( P(\abs{X - \EX[X]} \geq t) \leq \frac{\Var(X)}{t^2} \)
+  ‏\end{claim}
+‏ \begin{claim}[א"ש צ'בישב חד צדדי]
+‏
+‏\end{claim}
+‏\begin{theorem}[החוק החלש של המספרים הגדולים]
+אם ‎\(X_1, \dots ,X_n\) מ"מ ב"ת שווי הסתברות עם שונות סופית, אז לכל ‎\(\epsilon >0\) מתקיים
+
+‎\[ P\left(\abs{\frac{1}{n} \sum_{i=1}^n X_i - \EX[x_1]} > \epsilon\right) \overset{n\to \infty}{\longrightarrow} 0 \]
+‏\end{theorem}
+
+
+\ifxetex
+{\centering
+  { \begin{minipage}{\columnwidth}
+      \centering
+      \begin{sideways}
+        \begin{tabular}{ p{3cm} | p{4cm} | c | c | c | c | c}
+          התפלגות  & הסבר
+          & $\EX$ & $\EX^2$ & $\Var$ & $P(x=k) =$ & $\supp$ \\
+          \hline
+          אחידה \hfill‏ ‎\(\Uniform(n)\)
+                   & הסתברות שווה לכל מספר מ1 עד ‎\(n\)
+          & ‎\(\frac{n+1}{2}\)
+                  & ‎\(\nicefrac{(n+1)(2n+1)}{6}\)
+                            & ‎\(\frac{n^2 -1}{12}\)
+                                     & ‎\(\nicefrac{1}{n}\)
+                                                  & ‎\(\{1, \dots ,n\}\)\\
+
+          ברנולי \hfill‏ ‎\(\Ber(p)\)
+                   & הצלחה בסיכוי ‎\(p\), כשלון בסיכוי ‎\(1-p\)
+          & ‎\(p\)
+                  & ‎\(p\)
+                            & ‎\(p(1-p)\)
+                                     & ‎\(P(X\!\!=\!\!0) = 1-p,\  P(X\!\!=\!\!1) = p\)
+                                                  & ‎\(\{0,1\}\) \\
+          בינומית \hfill‏ ‎\(\Bin(n,p)\)
+                   & סכום של ‎\(n\) ניסויים ב"ת, כשכל אחד מהם מצליח בהסתברות ‎\(p\)
+          & ‎\(n p\)
+                  & ‎\(n p (1-p) + n^2 p^2\)
+                            & ‎\(n p (1-p)\)
+                                     & ‎\(\binom{n}{k}p^k (1-p)^{n-k}\)
+                                                  & ‎\(\{0, \dots ,n\}\) \\
+          בינומית שלילית \hfill‏ ‎\(\NB(r,p)\)
+                   & כמות הטלות המטבע עם עץ בהס\-תברות ‎\(p\) עד שקיבלנו ‎\(r\) עצים (כולל)
+          & ‎\(\frac{pr}{1-p}\)
+                  & ‎\(\frac{pr(1+pr)}{(1-p)^2}\)
+                            & ‎\(\frac{pr}{(1-p)^2}\)
+                                     &  \(\binom{k|r-1}{k}(1-p)^r p^k\)
+                                                  & \(\NN_{0+}\) \\
+          גאומטרית \hfill‏ ‎\(\Geom(p)\)
+                   & מטילים מטבע עם הסתברות ‎\(p\) לעץ וסופרים הטלות על עד הראשון (כולל)
+          & ‎\(\nicefrac{1}{p}\)
+                  & ‎\(\nicefrac{1}{p^2}\)
+                            & ‎\(\frac{1-p}{p^2}\)
+                                     & ‎\((1-p)^{k-1}p\)
+                                                  & ‎\(\NN_{1+}\) \\
+          \parbox{3cm}{
+          היפר גאומטרית\\
+          \hspace*{\fill} \(\HG(N,D,n)\)}
+                   & דוגמים ‎\(n\) פריטים מאוכלוסיה בגודל ‎\(N\) שבה יש ‎\(D\) מיוחדים.
+                     \newline
+                     כמה מיוחדים מצאנו?
+          & ‎\(\frac{Dn}{N}\)
+                  & ‎\(\frac{D(N-D)(N-n)n}{N^2(N-1)} + \frac{D^2n^2}{N^2}\)
+                            & ‎\(\frac{D(N-D)(N-n)n}{N^2(N-1)}\)
+                                     & ‎\(\binom{D}{k}\binom{N-D}{n-k}\big{/}\binom{N}{n}\)
+                                                  & ‎\(\begin{array}{ll} \{\max(0,n+D),\\
+                                                        \hfill\dots,\min(n,D)\}
+                                                      \end{array}\) \\
+
+          פואסון \hfill‏ ‎\(\Poi(\lambda)\)
+                   & מספר הצלחות בתהליך בינומי כאשר ‎\(n\to \infty , p\to 0, n p\to \lambda \)
+          & ‎\(\lambda \)
+                  & ‎\(\lambda + \lambda^2\)
+                            & ‎\(\lambda\)
+                                     & ‎\(e^{-\lambda} \frac{\lambda^k}{k!}\)
+                                                  & ‎\(\NN_{0+}\)
+        \end{tabular}
+\end{sideways}
+\end{minipage}}}
+\fi
+
+\end{document}
