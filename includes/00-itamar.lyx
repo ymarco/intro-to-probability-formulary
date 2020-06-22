@@ -1682,7 +1682,7 @@ Cov\left(X,Y\right)=E\left[\left(X-E\left[X\right]\right)\left(Y-E\left[Y\right]
 \begin_inset Formula $X$
 \end_inset
 
- מתפלג גיאומטרי 
+ מתפלג גיאומטרי אז 
 \begin_inset Formula $P\left(X=n+k\mid X>n\right)=P\left(X=k\right)$
 \end_inset
 
