@@ -1,4 +1,5 @@
 \documentclass[8pt,twocolumn]{extarticle}
+\makeatletter
 \usepackage[a4paper,margin=0.15in]{geometry} % margins setup
 \usepackage{array}
 \usepackage{nicefrac}
@@ -14,8 +15,8 @@
   \newtheorem*{#1}{#2}
 }
 \newtheoremstyle{all}% name
-{1pt}% Space above
-{0pt}% Space below
+{1pt \@plus 0.2em}% Space above
+{1pt \@plus 0.2em}% Space below
 {}% Body font
 {}% Indent amount
 {\bfseries}% Theorem head font
@@ -57,7 +58,6 @@
   % \setlength{\belowdisplayshortskip}{0em}
 }
 
-\makeatletter
 \setcounter{secnumdepth}{0}
 \renewcommand\section{\vspace{-2em}\@startsection {section}{1}{\z@}%
   {-5.5ex \@plus -1ex \@minus -.2ex}%
@@ -92,19 +92,18 @@
  \vspace{-7em} % space is expensive!
  \begin{tabular}{C{0.25\paperwidth} C{0.25\paperwidth} C{0.25\paperwidth}}
    & & \footnotesize{תמיכה נפשית} \\
-   יואב מרקו & איתמר רוט & יואב רוזין
+   יואב מרקו{\color{gray} (ב)} & איתמר רוט & יואב רוזין
  \end{tabular}
  \vspace{1em} % reclaim a bit of space so the title doesn't overlap
 }
 
 \begin{document}
 \maketitle
-\raggedbottom
 \input{includes}
 
 
-\vfill
-\vspace{0.5em}
-\small{
-  ומי שלא טוב לו יום מרקוב לו}
+% \vfill
+% \vspace{0.5em}
+% \small{
+  % ומי שלא טוב לו יום מרקוב לו}
 \end{document}
