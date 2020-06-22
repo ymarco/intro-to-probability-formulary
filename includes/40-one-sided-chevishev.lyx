@@ -9,13 +9,10 @@
 \usepackage[use-david]{culmus}
 \end_preamble
 \use_default_options true
-\begin_modules
-TheoremsHeb
-\end_modules
 \maintain_unincluded_children false
 \language hebrew
 \language_package default
-\inputencoding auto
+\inputencoding utf8x
 \fontencoding global
 \font_roman "lmodern" "default"
 \font_sans "helvet" "default"
