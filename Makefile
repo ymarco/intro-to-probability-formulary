@@ -2,10 +2,12 @@ LATEX=latexmk -interaction=nonstopmode -pdf -xelatex --synctex=1
 
 LYXS=$(wildcard includes/*.lyx)
 LYXINCLUDES=$(patsubst %.lyx,%.bare_tex,$(LYXS))
+TEXS=$(wildcard includes/*.tex)
+TEXINCLUDES=$(patsubst %.tex,%.bare_tex,$(TEXS))
 
 formulary.pdf: formulary.tex includes.tex
 
-includes.tex: $(LYXINCLUDES) includes/30-marco.bare_tex
+includes.tex: $(LYXINCLUDES) $(TEXINCLUDES)
 	ls includes/*.bare_tex | sed 's/\(.*\)/\\input{\1}/' > $@
 
 %.pdf: %.tex
