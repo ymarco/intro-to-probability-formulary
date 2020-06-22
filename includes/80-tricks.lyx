@@ -96,6 +96,44 @@ theorems-ams-extended
 \end_layout
 
 \begin_layout Itemize
+טיפים איך לפסול אפשרויות בשאלת 
+\begin_inset Quotes eld
+\end_inset
+
+כיצד מתפלג ...
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם התומך של 
+\begin_inset Formula $X$
+\end_inset
+
+ לא חסום זה לא יכול להיות בינומי או היפר גאומטרי
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ יכול לקבל ערכים שליליים זאת לא התפלגות שאנחנו מכירים.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $0\in supp\left(X\right)$
+\end_inset
+
+ זה לא גאומטרי/היפר גאומטרי
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
 אם 
 \begin_inset Formula $supp\left(X\right)=\left\{ a,b\right\} $
 \end_inset
@@ -327,6 +365,44 @@ E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+מטריצה היא 
+\series bold
+דו סטוכסטית
+\series default
+ אם סכום האיברים בכל שורה/עמודה הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ ההתפלגות הסטציונרית של מטריצה כזאת היא ההתפלגות האחידה.
 \end_layout
 
 \end_body
