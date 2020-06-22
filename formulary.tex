@@ -2,6 +2,7 @@
 \usepackage[a4paper,margin=0.15in]{geometry} % margins setup
 \usepackage{array}
 \usepackage{nicefrac}
+\usepackage{titlesec}
 \usepackage{rotating}
 \usepackage{preamble}
 
@@ -54,13 +55,13 @@
   % \setlength{\belowdisplayshortskip}{0em}
 }
 
-\makeatletter
 \setcounter{secnumdepth}{0}
-\renewcommand\section{\@startsection {section}{1}{\z@}%
-  {-5.5ex \@plus -1ex \@minus -.2ex}%
-  {.3ex \@plus.2ex}%
-                                     {\normalfont\large\bfseries\center}}
-\makeatother
+
+\titlespacing{\section}{1pt}{-1em}{1pt}[1pt]%
+\titleformat*{\section}{\normalfont\large\bfseries\center}
+\titlespacing{\subsection}{1pt}{1pt}{1pt}[1pt]%
+\titleformat*{\subsection}{\normalfont\large\bfseries}
+
 
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
