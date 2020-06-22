@@ -310,22 +310,122 @@ theorems-ams-extended
 \end_inset
 
 ת אז:
-\begin_inset VSpace -0.7em
+\begin_inset Newline newline
 \end_inset
 
 
-\begin_inset Formula 
-\begin{gather*}
-\min\left(X,Y\right)\sim Geom\left(p+q-pq\right)\\
-\begin{aligned}P\left(X=Y\right)=\frac{pq}{p+q-pq} &  & P\left(X>Y\right)=\frac{q\left(1-p\right)}{p+q-pq}\end{aligned}
-\\
-E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]
-\end{gather*}
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
 
 \end_inset
 
 
-\begin_inset VSpace -1.5em
+\begin_inset Formula $\min\left(X,Y\right)\sim Geom\left(p+q-pq\right)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\begin{array}{ccc}
+P\left(X=Y\right)=\frac{pq}{p+q-pq} &  & P\left(X>Y\right)=\frac{q\left(1-p\right)}{p+q-pq}\end{array}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
