@@ -13,6 +13,21 @@ includes.tex: $(LYXINCLUDES) includes/30-marco.bare_tex
 
 includes/%.tex: includes/%.lyx
 	lyx --export latex $< || lyx --export xetex $<
+	sed -e 's/Ber\b/\\Ber/g' \
+		-e 's/Bin\b/\\Bin/g' \
+		-e 's/Cov\b/\\Cov/g' \
+		-e 's/E\\left\[/\\EX\\left[/g' \
+		-e 's/Geom\b/\\Geom/g' \
+		-e 's/HyperGeom\b/\\HyperGeom/g' \
+		-e 's/NB\b/\\NB/g'   \
+		-e 's/Poi\b/\\Poi/g' \
+		-e 's/Rank\b/\\Rank/g' \
+		-e 's/Uniform\b/\\Uniform/g' \
+		-e 's/Var\b/\\Var/g' \
+		-e 's/[Ss]upp\b/\\supp/g' \
+		-e 's/else\b/\\text\{else}/g' \
+		-e 's/std\b/\\std/g' \
+		-i $@
 
 # remove newlines so sed can work multiline, cut everyting until
 # \begin{document}, add newlines back and remove the outside document env. Now
@@ -22,21 +37,7 @@ includes/%.bare_tex: includes/%.tex
 		tr '\n' '\r' |\
 		sed 's/^.*\\begin{document}//' |\
 		tr '\r' '\n' |\
-		sed -e 's/\\end{document}//' \
-			-e 's/Ber\b/\\Ber/g' \
-			-e 's/Bin\b/\\Bin/g' \
-			-e 's/Cov\b/\\Cov/g' \
-			-e 's/E\\left\[/\\EX\\left[/g' \
-			-e 's/Geom\b/\\Geom/g' \
-			-e 's/HyperGeom\b/\\HyperGeom/g' \
-			-e 's/NB\b/\\NB/g'   \
-			-e 's/Poi\b/\\Poi/g' \
-			-e 's/Rank\b/\\Rank/g' \
-			-e 's/Uniform\b/\\Uniform/g' \
-			-e 's/Var\b/\\Var/g' \
-			-e 's/[Ss]upp\b/\\supp/g' \
-			-e 's/else\b/\\text\{else}/g' \
-			-e 's/std\b/\\std/g' > $@
+		sed -e 's/\\end{document}//' > $@
 
 
 # it is what it is
