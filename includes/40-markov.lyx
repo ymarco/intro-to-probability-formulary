@@ -1,0 +1,362 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{culmus}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Hadasim CLM"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 1
+\output_sync_macro "\synctex=1"
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing other 1.2
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25cm
+\topmargin 2cm
+\rightmargin 1.25cm
+\bottommargin 2cm
+\footskip 1cm
+\secnumdepth -2
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 2 5 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+שרשראות מרקוב
+\end_layout
+
+\begin_layout Definition*
+שרשרת מרקוב היא אוסף מצבים 
+\begin_inset Formula $S$
+\end_inset
+
+, התפלגות התחלתית 
+\begin_inset Formula $\mu$
+\end_inset
+
+ על 
+\begin_inset Formula $S$
+\end_inset
+
+, מטריצת מעבר 
+\begin_inset Formula $P$
+\end_inset
+
+ שהיא 
+\begin_inset Formula $S\times S$
+\end_inset
+
+ שאיבריה אי שליליים וסכום כל שורה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ שרשרת מרקוב עד זמן 
+\begin_inset Formula $n$
+\end_inset
+
+ היא סדרת המ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $P\left(X_{0}=x_{0},...,x_{n}=x\right)=\mu\left(x_{0}\right)P\left(x_{0},x_{1}\right)\cdot...\cdot P\left(x_{n-1},x_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition*
+עבור 
+\begin_inset Formula $\mu$
+\end_inset
+
+ התפלגות התחלתית נסמן את פונקציית ההסתברות ב-
+\begin_inset Formula $P_{\mu}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $P_{\mu}\left(X_{0}=x_{0},X_{1}=x_{1}\right)=\mu\left(x_{0}\right)P\left(x_{0},x_{1}\right),P_{\mu}\left(X_{0}=x_{0}\right)=\mu\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition*
+נסמן את 
+\begin_inset Formula $P_{x_{0}}$
+\end_inset
+
+ להיות 
+\begin_inset Formula $P_{\mu}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\mu$
+\end_inset
+
+ התפלגות שבה 
+\begin_inset Formula $\mu\left(x_{0}\right)=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Claim*
+תכונת מרקוב: יהי 
+\begin_inset Formula $k\geq1$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $V\subset S^{k}$
+\end_inset
+
+, יהיו 
+\begin_inset Formula $x_{k},..,x_{n}\in S$
+\end_inset
+
+ אזי 
+\begin_inset Formula 
+\[
+P_{\mu}\left(X_{k+1}=x_{k+1},...,X_{n}=x_{m}|X_{k}=x_{k},\left(X_{0},...,x_{v-1}\right)\in V\right)=P_{x_{k}}\left(X_{1}=x_{k+1},...,X_{n-k}=x_{n}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+עבור התפלגות התחלתית 
+\begin_inset Formula $\mu$
+\end_inset
+
+ כך ש
+\begin_inset Formula $P_{\mu}\left(X_{k}=x_{k},...,\left(x_{0},...,x_{k-1}\right)\in V\right)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma*
+תהי 
+\begin_inset Formula $\mu$
+\end_inset
+
+ התפלגות התחלתית ו
+\begin_inset Formula $\mu_{t}$
+\end_inset
+
+ התפלגות אחרי 
+\begin_inset Formula $t$
+\end_inset
+
+ צעדים )כלומר התפלגות 
+\begin_inset Formula $X_{t}$
+\end_inset
+
+( אז 
+\begin_inset Formula $\mu_{t}=\mu\cdot P^{t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition*
+התפלגות 
+\begin_inset Formula $\pi$
+\end_inset
+
+ על 
+\begin_inset Formula $S$
+\end_inset
+
+ נקראת סטציונרית אם 
+\begin_inset Formula $\pi\cdot P=\pi$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $P_{\pi}\left(X_{1}=x\right)=\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+לכל שרשרת מרקוב קיימת התפלגות סטציונרית.
+\end_layout
+
+\begin_layout Definition*
+שרשרת מרקוב אי פריקה אם לכל 
+\begin_inset Formula $x,y\in S$
+\end_inset
+
+ קיים 
+\begin_inset Formula $t\geq1$
+\end_inset
+
+ כך ש
+\begin_inset Formula $P^{t}\left(x,y\right)=P_{x}\left(X_{t}=y\right)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem*
+אם שרשרת מרקוב אי פריקה אז ההתפלגות הסטציונרית יחידה
+\end_layout
+
+\begin_layout Claim*
+תהי 
+\begin_inset Formula $f:S\rightarrow\mathbb{R}$
+\end_inset
+
+ )וקטור עמודה( אז לכל 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(P\cdot f\right)\left(x\right)=E_{s}\left[f\left(X_{1}\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary*
+לכל 
+\begin_inset Formula $f:S\rightarrow\mathbb{R}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(P^{t}\cdot f\right)\left(x\right)=E_{x}\left[f\left(X_{t}\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+שרשרת היא הפיכה קיימת התפלגות 
+\begin_inset Formula $\pi$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\pi_{v}P\left(v,w\right)=\pi_{w}P\left(w,v\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $v,w$
+\end_inset
+
+.
+ במקרה של שרשרת הפיכה 
+\begin_inset Formula $\pi$
+\end_inset
+
+ מהווה התפלגות סטציונרית.
+\end_layout
+
+\end_body
+\end_document
