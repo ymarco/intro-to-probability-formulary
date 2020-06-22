@@ -1,0 +1,1862 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{culmus}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Hadasim CLM"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 1
+\output_sync_macro "\synctex=1"
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing other 1.2
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25cm
+\topmargin 2cm
+\rightmargin 1.25cm
+\bottommargin 2cm
+\footskip 1cm
+\secnumdepth -2
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 2 5 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+תכונות בסיסיות של מרחבי הסתברות ומאורעות
+\end_layout
+
+\begin_layout Claim*
+דה מורגן: אם 
+\begin_inset Formula $A_{1},...,A_{n}$
+\end_inset
+
+ מאורעות )כולל 
+\begin_inset Formula $n=\infty$
+\end_inset
+
+( אז 
+\begin_inset Formula $\left(\bigcup_{i=1}^{n}A_{i}\right)^{c}=\bigcap_{i=1}^{n}A_{i}^{c}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $\left(\bigcap_{i=1}^{n}A_{i}\right)^{c}=\bigcup_{i=1}^{n}A_{i}^{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+הכלה והדחה: 
+\begin_inset Formula $P\left(\bigcup_{i=1}^{n}A_{i}\right)=\sum_{\emptyset\neq I\subset\left[n\right]}\left(-1\right)^{i+1}P\left(\bigcap_{i\in I}A_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+חסם האיחוד: 
+\begin_inset Formula $P\left(\bigcup_{i=1}^{n}A_{i}\right)\leq\sum_{i=1}^{n}P\left(A_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+אם 
+\begin_inset Formula $\left(\Omega,P\right)$
+\end_inset
+
+ מרחב הסתברות אחיד אזי 
+\begin_inset Formula $P\left(A\right)=\frac{\left|A\right|}{\left|\Omega\right|}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מרחבי הסתברות מותנים
+\end_layout
+
+\begin_layout Definition*
+יהי 
+\begin_inset Formula $\left(\Omega,P\right)$
+\end_inset
+
+ מרחב הסתברות ו-
+\begin_inset Formula $B$
+\end_inset
+
+ מאורע מהסתברות חיובית.
+ אזי 
+\begin_inset Formula $\left(\Omega,P\left(\cdot\mid B\right)\right)$
+\end_inset
+
+ מרחב הסתברות מותנה ב-
+\begin_inset Formula $B$
+\end_inset
+
+ המוגדר 
+\begin_inset Formula $P\left(\omega\mid B\right)=\begin{cases}
+\frac{P\left(\omega\right)}{P\left(B\right)} & \omega\in B\\
+0 & \omega\notin B
+\end{cases}$
+\end_inset
+
+, לכן 
+\begin_inset Formula $P\left(A\mid B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+יהיו 
+\begin_inset Formula $B_{1},...,B_{n}\subset\Omega$
+\end_inset
+
+ מאורעות זרים ו
+\begin_inset Formula $\Omega=\biguplus_{i=1}^{n}B_{i}$
+\end_inset
+
+, כמו כן 
+\begin_inset Formula $P\left(B_{i}\right)>0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\text{1\ensuremath{\leq i\leq n}}$
+\end_inset
+
+, ויהי 
+\begin_inset Formula $A$
+\end_inset
+
+ מאורע כלשהו.
+ אזי: 
+\series bold
+נוסחת ההסתברות השלמה: 
+\series default
+
+\begin_inset Formula $P\left(A\right)=\sum_{i=1}^{n}P\left(B_{i}\right)P\left(A\mid B_{i}\right)$
+\end_inset
+
+.
+ 
+\series bold
+חוק בייז: 
+\series default
+
+\begin_inset Formula $P\left(B_{j}\mid A\right)=\frac{P\left(B_{j}\right)P\left(A\mid B_{j}\right)}{\sum_{j\neq i=1}^{n}P\left(B_{i}\right)P\left(A\mid B_{i}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+כלל השרשרת: יהיו 
+\begin_inset Formula $A_{1},...,A_{n}$
+\end_inset
+
+ מאורעות כך ש-
+\begin_inset Formula $P\left(A_{1}\cap....\cap A_{n-1}\right)>0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P\left(\bigcap_{k=1}^{n}A_{k}\right)=\prod_{k=1}^{n}P\left(A_{k}\mid\bigcap_{i=1}^{k-1}A_{k}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition*
+אי תלות מותנה: 
+\begin_inset Formula $A,B$
+\end_inset
+
+ מאורעות בלתי תלויים במרחב ההסתברות המותנה ב-
+\begin_inset Formula $C$
+\end_inset
+
+ אם 
+\begin_inset Formula $P\left(A\cap B\mid C\right)=P\left(A\mid C\right)\cdot P\left(B\mid C\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מספרי רמזי
+\end_layout
+
+\begin_layout Definition*
+המספר ֵ הוא כמות הקודקודים המינימלית 
+\begin_inset Formula $n$
+\end_inset
+
+ כך שלכל צביעה של קשתות הגרף השלם על 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים באדום וכחול קיימים 
+\begin_inset Formula $t$
+\end_inset
+
+ קודקודים שכל הקשתות ביניהן צבועות אדום או קיימים 
+\begin_inset Formula $s$
+\end_inset
+
+ קודקודים שכל הקשתות ביניהם צבועות בכחול.
+\end_layout
+
+\begin_layout Theorem*
+רמזי- 
+\begin_inset Formula $R\left(t,s\right)$
+\end_inset
+
+ סופי לכל 
+\begin_inset Formula $t,s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+חסם עליון ל-
+\begin_inset Formula $R\left(t,t\right)$
+\end_inset
+
+ - צריך להראות שבכל צביעה של קשתות הגרף על 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים קיימים 
+\begin_inset Formula $t$
+\end_inset
+
+ קודקודים עם הקשתות ביניהן חד-גוניות, אז 
+\begin_inset Formula $R\left(t,t\right)\leq n$
+\end_inset
+
+ , ידוע 
+\begin_inset Formula $R\left(t,t\right)\leq c\cdot\frac{4^{t}}{\sqrt{t}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+חסם תחתון ל-
+\begin_inset Formula $R\left(t,t\right)$
+\end_inset
+
+ - צריך למצוא צביעה ספציפית של קשתות על n קודקודים כך שאין t קודקודים שכל
+ הקשתות ביניהם מונוכרומטיות ואז 
+\begin_inset Formula $R\left(t,t\right)>n$
+\end_inset
+
+, ידוע כי 
+\begin_inset Formula $R\left(t,t\right)>2^{\frac{t}{2}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מרחבי מכפלה
+\end_layout
+
+\begin_layout Definition*
+יהי 
+\begin_inset Formula $\left(\Omega_{i},P_{i}\right)$
+\end_inset
+
+ מרחבי הסתברות עבור 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+, מרחב המכפלה שלהם מוגדר 
+\begin_inset Formula $P\left(\Omega,P\right)=\bigotimes_{i=1}^{n}\left(\Omega_{i},P_{i}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\Omega=\Omega_{1}\times...\times\Omega_{n}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $P\left(w_{1},...,w_{n}\right)=\prod_{i=1}^{n}P_{i}\left(\omega_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+לכל 
+\begin_inset Formula $i$
+\end_inset
+
+ ומאורע 
+\begin_inset Formula $A_{i}\subset\Omega_{i}$
+\end_inset
+
+ אם נגדיר 
+\begin_inset Formula $\overline{A_{i}}=\Omega_{1}\times...\times A_{i}\times...\times\Omega_{i}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P\left(\overline{A_{i}}\right)=P_{i}\left(A_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+\begin_inset Formula $P\left(\bigcap_{i=1}^{n}\overline{A_{i}}\right)=\prod_{i=1}^{n}P\left(\overline{A_{i}}\right)$
+\end_inset
+
+, לכן 
+\begin_inset Formula $\overline{A_{1}},...,\overline{A_{n}}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ב
+\begin_inset Formula $\left(\Omega,P\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+אי תלות
+\end_layout
+
+\begin_layout Definition*
+מאורעות 
+\begin_inset Formula $A,B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אם 
+\begin_inset Formula $P\left(A\cap B\right)=P\left(A\right)\cdot P\left(B\right)$
+\end_inset
+
+ או באופן שקול 
+\begin_inset Formula $P\left(A\right)=P\left(A\mid B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition*
+מאורעות 
+\begin_inset Formula $A_{1},...,A_{n}$
+\end_inset
+
+ בלתי תלויים אם לכל תת קבוצה 
+\begin_inset Formula $I\subset\left[n\right]$
+\end_inset
+
+ כך ש
+\begin_inset Formula $2\leq\left|I\right|$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P\left(\bigcap_{i\in I}A_{i}\right)=\prod_{i\in I}P\left(A_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition*
+הגדרה שקולה: אם 
+\begin_inset Formula $P\left(B_{1}\cap...\cap B_{n}\right)=\prod_{i=1}^{n}P\left(B_{i}\right)$
+\end_inset
+
+ לכל אפשרות בה
+\begin_inset Formula $B_{i}=A_{i}$
+\end_inset
+
+ או 
+\begin_inset Formula $B_{i}=A_{i}^{c}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+משתנים מקריים
+\end_layout
+
+\begin_layout Definition*
+יהיו 
+\begin_inset Formula $X_{1},...,X_{n}:\Omega\rightarrow S$
+\end_inset
+
+ משתנים מקריים אז ניתן לחשוב עליהם כמשתנה מקרי אחד 
+\begin_inset Formula $\left(X_{1},...,X_{n}\right):\Omega\rightarrow S^{n}$
+\end_inset
+
+ והוא מוגדר ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\left(X_{1},...,X_{n}\right)\left(\omega\right)=\left(X_{1}\left(\omega\right),...,X_{n}\left(\omega\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Definition*
+יהיו 
+\begin_inset Formula $X_{1},...,X_{n}:\Omega\rightarrow S$
+\end_inset
+
+ ו
+\begin_inset Formula $f:S^{n}\rightarrow T$
+\end_inset
+
+ אזי המ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $Y=f\left(X_{1},...,X_{n}\right)$
+\end_inset
+
+ מוגדר כמשתנה המקרי המקבל ערכים ב-
+\begin_inset Formula $T$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $Y\left(\omega\right)=f\left(X_{1}\left(\omega\right),...,X_{n}\left(\omega\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+אי תלות של משתנים מקריים
+\end_layout
+
+\begin_layout Definition*
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ הם משתנים מקריים בלתי תלויים אם 
+\begin_inset Formula $P\left(X_{1}=k_{1},...,X_{n}=k_{n}\right)=\prod_{i=1}^{n}P\left(X_{i}=k_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Definition*
+אם 
+\begin_inset Formula $A_{1},...,A_{n}$
+\end_inset
+
+ מאורעות ו
+\begin_inset Formula $X_{i}=1_{A_{i}}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ אינדיקטור אזי 
+\begin_inset Formula $A_{1},...,A_{n}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת
+\end_layout
+
+\begin_layout Claim*
+אם 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אז כל תת אוסף שלהם ב
+\begin_inset Quotes erd
+\end_inset
+
+ת
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+אם 
+\begin_inset Formula $X_{1},X_{2},...,X_{n}:\Omega\rightarrow S$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת, ו-
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ פונקציות אזי 
+\begin_inset Formula $f_{1}\left(X_{1}\right),....,f_{n}\left(X_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+יהיו 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת 
+\begin_inset Formula $X_{i}:\Omega\rightarrow S_{i}$
+\end_inset
+
+ ו
+\begin_inset Formula $E_{i}\subset S_{i}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P\left(X_{1}\in E_{1},...,x_{n}\in E_{n}\right)=\prod_{i=1}^{n}P\left(X_{i}\in E_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+התפלגויות או להיות
+\end_layout
+
+\begin_layout Definition*
+יהיו 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מ
+\begin_inset Formula $\Omega\rightarrow S$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\mu_{\left(X_{1},...,X_{n}\right)}$
+\end_inset
+
+ ההתפלגות המשותפת של 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ מוגדר ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\mu_{\left(X_{1},...,X_{n}\right)}\left(k_{1},..,k_{n}\right)=P\left(X_{1}=k_{1},...,X_{n}=k_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+התכנסות התפלגות בינומית לפואסונית: 
+\emph on
+תהי 
+\begin_inset Formula $\left(p_{n}\right)_{n\geq1}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $np_{n}\rightarrow\lambda>0$
+\end_inset
+
+ אזי לכל 
+\begin_inset Formula $k\geq0$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}\binom{n}{k}p^{k}\left(1-p\right)^{n-k}=\frac{e^{-\lambda}}{k!}\lambda^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+קונבולציה: בהינתן זוג מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ההתפלגות של 
+\begin_inset Formula $X+Y$
+\end_inset
+
+ הינה 
+\begin_inset Formula $P\left(X+Y=a\right)=\sum_{b}P\left(X=b\right)P\left(Y=a-b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary*
+אם 
+\begin_inset Formula $X\sim Bin\left(n,p\right),Y\sim Bin\left(m,p\right)$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אזי 
+\begin_inset Formula $X+Y\sim Bin\left(n+m,p\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $X\sim Poi\left(\lambda\right),Y\sim Poi\left(\mu\right)$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אזי 
+\begin_inset Formula $X+Y\sim Poi\left(\lambda+\mu\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת כך ש
+\begin_inset Formula $X_{i}\sim Ber\left(p\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $S_{n}=\sum_{k=1}^{n}X_{k}\sim Ber\left(n,p\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+בהינתן זוג התפלגויות 
+\begin_inset Formula $\mu_{1},\mu_{2}$
+\end_inset
+
+ על 
+\begin_inset Formula $S_{1},S_{2}$
+\end_inset
+
+ )בהתאמה( כל התפלגות משותפת על 
+\begin_inset Formula $\left(s_{1}\times s_{2}\right)$
+\end_inset
+
+ נקראת צימוד של 
+\begin_inset Formula $\mu_{1},\mu_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+אם 
+\begin_inset Formula $X:\Omega_{1}\rightarrow S,Y:\Omega_{2}\rightarrow S$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ו-
+\begin_inset Formula $f:S\rightarrow S'$
+\end_inset
+
+ אזי אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ שווי התפלגות גם 
+\begin_inset Formula $f\left(X\right),f\left(Y\right)$
+\end_inset
+
+ שווי התפלגות.
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ אז לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|P\left(X=k\right)-P\left(Y=k\right)\right|\leq P\left(X\neq Y\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+תוחלת
+\end_layout
+
+\begin_layout Definition*
+עבור משתנה מקרי 
+\begin_inset Formula $X:\Omega\rightarrow\mathbb{R}^{+}$
+\end_inset
+
+ בדיד )
+\begin_inset Formula $supp\left(X\right)=\left\{ \omega\in\Omega\mid X\left(\omega\right)\neq0\right\} $
+\end_inset
+
+ בן מניה( ואי שלילי, אזי 
+\begin_inset Formula $E\left[X\right]=\sum_{\omega\in\Omega}X\left(\omega\right)P\left(\omega\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition*
+יהי 
+\begin_inset Formula $X:\Omega:\mathbb{R}$
+\end_inset
+
+, נגדיר 
+\begin_inset Formula 
+\begin{align*}
+X^{+}\left(\omega\right) & =\begin{cases}
+X\left(\omega\right) & X\left(\omega\right)\geq0\\
+0 & else
+\end{cases} & X^{-}\left(\omega\right) & =\begin{cases}
+-X\left(\omega\right) & X\left(\omega\right)\leq0\\
+0 & else
+\end{cases}
+\end{align*}
+
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ אי שליליים המקיימים 
+\begin_inset Formula $X=X^{+}-X^{-},\left|X\right|=X^{+}+X^{-}$
+\end_inset
+
+.
+ כעת:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ל-
+\begin_inset Formula $X$
+\end_inset
+
+ תוחלת סופית אם 
+\begin_inset Formula $E\left[X^{+}\right],E\left[X^{-}\right]<\infty$
+\end_inset
+
+ ואז 
+\begin_inset Formula $E\left[X\right]=E\left[X^{+}\right]-E\left[X^{-}\right]=\sum_{\omega\in\Omega}X\left(\omega\right)P\left(\omega\right)$
+\end_inset
+
+ והטור מתכנס בהחלט.
+\end_layout
+
+\begin_layout Enumerate
+ל-
+\begin_inset Formula $X$
+\end_inset
+
+ תוחלת אין סופית - אם 
+\begin_inset Formula $E\left[X^{+}\right]=\infty,E\left[X^{-}\right]<\infty$
+\end_inset
+
+ אז 
+\begin_inset Formula $E\left[X\right]=\infty$
+\end_inset
+
+ ולהפך.
+\end_layout
+
+\begin_layout Enumerate
+ל-
+\begin_inset Formula $X$
+\end_inset
+
+ תוחלת לא מוגדרת - אם 
+\begin_inset Formula $E\left[X^{+}\right]=\infty,E\left[X^{-}\right]=\infty$
+\end_inset
+
+ אז 
+\begin_inset Formula $E\left[X\right]$
+\end_inset
+
+ לא מוגדרת
+\end_layout
+
+\end_deeper
+\begin_layout Claim*
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ אי שלילי אזי 
+\begin_inset Formula $E\left[X\right]=\sum_{k\in Supp\left(\mu_{X}\right)}P\left(X=k\right)\cdot k$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעל תוחלת סופית אזי 
+\begin_inset Formula $E\left[X\right]=\sum_{k\in Supp\left(\mu_{X}\right)}P\left(X=k\right)\cdot k$
+\end_inset
+
+ והטור מתכנס בהחלט.
+ בכיון השני אם הטור מתכנס בהחלט אז התוחלת סופית ומקיימת השיוויון הקודם.
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+לינאריות והומוגניות: אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעלי תוחלת, 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $E\left[aX+bY\right]=aE\left[X\right]+bE\left[Y\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעלי תוחלת כך ש
+\begin_inset Formula $P\left(X\leq Y\right)=1$
+\end_inset
+
+ אזי 
+\begin_inset Formula $E\left[X\right]\leq E\left[Y\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+יהי 
+\begin_inset Formula $X:\Omega\rightarrow S$
+\end_inset
+
+ אם 
+\begin_inset Formula $f:S\rightarrow\mathbb{R}$
+\end_inset
+
+ אז 
+\begin_inset Formula $E\left[f\left(X\right)\right]$
+\end_inset
+
+ סופית אם ורק אם 
+\begin_inset Formula $\sum_{k\in Supp\left(\mu_{X}\right)}P\left(X=k\right)f\left(k\right)$
+\end_inset
+
+ מתכנס בהחלט ואז הטור שווה 
+\begin_inset Formula $\left[f\left(X\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+יהיו 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מקריים בלתי תלויים.
+ אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ אי שליליים או שלשניהם תוחלת סופית אזי התוחלת 
+\begin_inset Formula $X\cdot Y$
+\end_inset
+
+ מוגדרת ומתקיים 
+\begin_inset Formula $E\left[XY\right]=E\left[X\right]E\left[Y\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+\begin_inset Formula $E\left[\left|X\right|\right]$
+\end_inset
+
+ סופית אם ורק אם 
+\begin_inset Formula $E\left[X\right]$
+\end_inset
+
+ סופית.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שונות
+\end_layout
+
+\begin_layout Definition*
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעל תוחלת סופית אזי השונות של 
+\begin_inset Formula $X$
+\end_inset
+
+ היא 
+\begin_inset Formula $Var\left(X\right)=E\left[\left(X-E\left[X\right]\right)^{2}\right]=E\left[X^{2}\right]-E^{2}\left[X\right]$
+\end_inset
+
+ וסטיית התקן של 
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\begin_inset Formula $std\left(X\right)=\sigma\left(X\right)=\sqrt{Var\left(X\right)}$
+\end_inset
+
+.
+ השונות מוגדרת לכל מ
+\begin_inset Quotes erd
+\end_inset
+
+מ עם תוחלת סופית אבל יכולה להיות אין סוף.
+\end_layout
+
+\begin_layout Claim*
+יהיו 
+\begin_inset Formula $X_{1},...,X_{n}$
+\end_inset
+
+ בעלי שונות סופית, אזי 
+\begin_inset Formula $Var\left(\sum_{i=1}^{n}X_{i}\right)=\sum_{i=1}^{n}Var\left(X_{i}\right)+2\sum_{1\leq i<j\leq n}Cov\left(X_{i},X_{j}\right)$
+\end_inset
+
+.
+ אם המשתנים ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אז שונות הסכום היא סכום השונויות.
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+\begin_inset Formula $Var\left(X\right)\geq0$
+\end_inset
+
+ ויש שיוויון אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $P\left(X=E\left[X\right]\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-4em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+\begin_inset Formula 
+\begin{align*}
+Var\left(aX\right) & =a^{2}Var\left(X\right) & std(aX) & =\left|a\right|std\left(X\right)\\
+Var\left(a+X\right) & =Var\left(X\right) & std\left(a+X\right) & =std\left(X\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+שונות משותפת ומקדם מתאם
+\end_layout
+
+\begin_layout Definition*
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-2.5em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Cov\left(X,Y\right)=E\left[\left(X-E\left[X\right]\right)\left(Y-E\left[Y\right]\right)\right]=E\left[XY\right]-E\left[X\right]E\left[Y\right]
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1.5em}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition*
+\begin_inset Formula $X,Y$
+\end_inset
+
+ בעלתי מתאם חיובי אם 
+\begin_inset Formula $Cov\left(X,Y\right)>0$
+\end_inset
+
+, בעלי מתאם שלילי אם 
+\begin_inset Formula $Cov\left(X,Y\right)<0$
+\end_inset
+
+ ובלתי מתואמים אם 
+\begin_inset Formula $Cov\left(X,Y\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim*
+אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ בעלי שונות סופית אז גם 
+\begin_inset Formula $\left|XY\right|,\left(X+Y\right)^{2},\left(X-Y\right)^{2}$
+\end_inset
+
+ בעלי תוחלת סופית, ולכן 
+\begin_inset Formula $Cov\left(X,Y\right)$
+\end_inset
+
+ סופית.
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אז הם בלתי מתואמים.
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+\begin_inset Formula $Cov\left(X,Y\right)=Cov\left(Y,X\right)$
+\end_inset
+
+, 
+\begin_inset Formula $Cov\left(aX,bY\right)=ab\cdot Cov\left(X,Y\right)$
+\end_inset
+
+ וכן אם 
+\begin_inset Formula $Z$
+\end_inset
+
+ בעל שונות סופית אז 
+\begin_inset Formula $Cov\left(Z+X,Y\right)=Cov\left(Z,Y\right)+Cov\left(X,Y\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Definition*
+עבור מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ בעלי שונות סופית ולא קבועים נגדיר מקדם מתאם 
+\begin_inset Formula $\rho\left(X,Y\right)=\frac{Cov\left(X,Y\right)}{std\left(X\right)\cdot std\left(Y\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim*
+תכונות: 
+\begin_inset Formula $\rho\left(X,Y\right)=\rho\left(Y,X\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\rho\left(X+a,Y\right)=\rho\left(X,Y\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\rho\left(aX,Y\right)=\frac{a}{\left|a\right|}\rho\left(X,Y\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\rho\left(X,X\right)=1$
+\end_inset
+
+ וכן 
+\begin_inset Formula $Cov\left(X,Y\right)=0$
+\end_inset
+
+ אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $\rho\left(X,Y\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem*
+\begin_inset Formula $\left|\rho\left(X,Y\right)\right|\leq1$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\rho\left(X,Y\right)=1$
+\end_inset
+
+ אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ קיימים 
+\begin_inset Formula $a>0,b$
+\end_inset
+
+ כך ש
+\begin_inset Formula $P\left(Y=aX+b\right)=1$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\rho\left(X,Y\right)=-1$
+\end_inset
+
+ אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ קיימים 
+\begin_inset Formula $a<0,b$
+\end_inset
+
+ כך ש
+\begin_inset Formula $P\left(Y=aX+b\right)=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section
+תוחלת מותנה
+\end_layout
+
+\begin_layout Definition*
+יהי 
+\begin_inset Formula $\left(\Omega,P\right)$
+\end_inset
+
+ מרחב הסתברות, 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעל תוחלת סופית, 
+\begin_inset Formula $A$
+\end_inset
+
+ מאורע כך ש
+\begin_inset Formula $P\left(A>0\right)$
+\end_inset
+
+.
+ אזי התוחלת של 
+\begin_inset Formula $X$
+\end_inset
+
+ בהינתן 
+\begin_inset Formula $A$
+\end_inset
+
+ מוגדרת כ
+\begin_inset Formula $E\left[X\mid A\right]=\sum_{\omega\in\Omega}X\left(\omega\right)P\left(\omega\mid A\right)=\sum_{k\in Supp\left(X\right)}k\cdot P\left(X=k\mid A\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition*
+בהינתן מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ על 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ אזי 
+\begin_inset Formula $E\left[X\mid Y\right]$
+\end_inset
+
+ הוא משתנה מקרי גם כן כך ש
+\begin_inset Formula $E\left[X\mid Y\right]\left(\omega\right)=E\left[X\mid Y=Y\left(\omega\right)\right]$
+\end_inset
+
+, אם 
+\begin_inset Formula $P\left(Y=Y\left(\omega\right)\right)=0$
+\end_inset
+
+ אז נגדיר את התוחלת להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem*
+יהיו 
+\begin_inset Formula $X,Y:\Omega\rightarrow\mathbb{R}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ כך ש
+\begin_inset Formula $X$
+\end_inset
+
+ בעל תוחלת סופית אזי 
+\begin_inset Formula $E\left[E\left[X\mid Y\right]\right]=E\left[X\right]$
+\end_inset
+
+ וכן 
+\begin_inset Formula $E\left[X\right]=\sum_{k\in Im\left(Y\right)}E\left[X\mid Y=K\right]P\left(Y=k\right)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $E\left[X\mid A\right]=\frac{E\left[X\cdot1_{A}\right]}{P\left(A\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+\begin_inset Formula $E\left[aX_{1}+bX_{2}\mid Y\right]=aE\left[X_{1}\mid Y\right]+bE\left[x_{2}\mid Y\right]$
+\end_inset
+
+, 
+\begin_inset Formula $E\left[X\cdot f\left(Y\right)\mid Y\right]=f\left(Y\right)E\left[X\mid Y\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Claim*
+אם 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ בת
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $P\left(E\left[X\mid Y\right]=E\left[X\right]\right)=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+טיפים ושטיקים )זהירות, חלק מהטענות דורשות הוכחה בשאלה הפתוחה(
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $supp\left(X\right)=\left\{ a,b\right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $Var\left(X\right)=\left(E\left[X\right]-a\right)\left(E\left[X\right]-b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם מטילים מטבע בהסתברות 
+\begin_inset Formula $p$
+\end_inset
+
+ לעץ עד שמקבלים עץ המשתנה המקרי שסופר כמה כישלונות מתפלג 
+\begin_inset Formula $Geom\left(p\right)-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+שימושי: 
+\series default
+יהיו 
+\begin_inset Formula $X_{1},...,X_{n},...$
+\end_inset
+
+ בלתי תלויים ושווי התפלגות.
+ יהי 
+\begin_inset Formula $N$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ כך ש
+\begin_inset Formula $supp\left(N\right)\subset\mathbb{N}$
+\end_inset
+
+ בלתי תלוי באחרים.
+ נגדיר 
+\begin_inset Formula $S=X_{1}+...+X_{N}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $E\left[S\right]=E\left[X_{1}\right]E\left[N\right]$
+\end_inset
+
+ וכן 
+\begin_inset Formula $Var\left(S\right)=Var\left(X\right)E\left[N\right]+E\left[X^{2}\right]Var\left(N\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+חוסר הזכרון של משתנה גיאומטרי: 
+\series default
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מתפלג גיאומטרי אז 
+\begin_inset Formula $P\left(X=n+k\mid X>n\right)=P\left(X=k\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+פיצול פואסון: 
+\series default
+אם 
+\begin_inset Formula $X\sim Poi\left(\lambda\right)$
+\end_inset
+
+ ומגדירים 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $Y\sim Bin\left(X,p\right)$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ )לדוגמה כמות מכוניות שנכנסות לצוצת שבהסתברות מסויימת מתקלקלות( אזי 
+\begin_inset Formula $Y\sim Bin\left(\lambda p\right)$
+\end_inset
+
+ ו-
+\begin_inset Formula $X,Y$
+\end_inset
+
+ בלתי תלויים.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $X_{\lambda}\sim Poi\left(\lambda\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\frac{X_{\lambda}-\lambda}{\sqrt{\lambda}}$
+\end_inset
+
+ מתקרב להתפלגות הנורמלית כאשר 
+\begin_inset Formula $\lambda\rightarrow\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ על 
+\begin_inset Formula $N$
+\end_inset
+
+ אזי 
+\begin_inset Formula $E\left[X\right]=\sum_{k=0}^{\infty}P\left(X\geq k\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $X\sim Ber\left(p\right),Y\sim Ber\left(q\right)$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אזי 
+\begin_inset Formula $\min\left\{ X,Y\right\} \sim Ber\left(pq\right),\max\left\{ X,Y\right\} \sim Ber\left(\left(1-p\right)\left(1-q\right)\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $P\left(X=Y\right)=1-p-q+2pq,P\left(X>Y\right)=p\left(1-q\right),E\left[X\mid X>Y\right]=\frac{pq}{P\left(X=Y\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $X\sim Geom\left(p\right),Y\sim Geom\left(q\right)$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אז:
+\begin_inset Formula 
+\begin{gather*}
+\min\left(X,Y\right)\sim Geom\left(p+q-pq\right)\\
+\begin{aligned}P\left(X=Y\right)=\frac{pq}{p+q-pq} &  & P\left(X>Y\right)=\frac{q\left(1-p\right)}{p+q-pq}\end{aligned}
+\\
+E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]
+\end{gather*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+הילוך מקרי: 
+\series default
+ההסתברות שבהילוך מקרי בשלב ה-
+\begin_inset Formula $n$
+\end_inset
+
+ יהיה במקום ה-
+\begin_inset Formula $k$
+\end_inset
+
+ הינה 
+\begin_inset Formula $\binom{n}{\frac{n+k}{2}}\left(\frac{1}{2}\right)^{2n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+למות מחדו
+\begin_inset Quotes erd
+\end_inset
+
+א: 
+\begin_inset Formula $1\pm x\leq e^{\pm x}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $1-x\geq e^{-x-2x^{2}}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\left[0,\frac{1}{2}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
