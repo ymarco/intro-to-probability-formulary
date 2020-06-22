@@ -14,7 +14,7 @@ includes.tex: $(LYXINCLUDES) $(TEXINCLUDES)
 	$(LATEX) $< -jobname=$(basename $@ .pdf)
 
 includes/%.tex: includes/%.lyx
-	lyx --export latex $< || lyx --export xetex $<
+	lyx --export xetex $<
 	sed -e 's/Ber\b/\\Ber/g' \
 		-e 's/Bin\b/\\Bin/g' \
 		-e 's/Cov\b/\\Cov/g' \
