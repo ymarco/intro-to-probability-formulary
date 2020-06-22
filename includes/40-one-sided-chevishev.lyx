@@ -103,14 +103,21 @@
 
 .
  אזי
-\begin_inset Formula 
-\[
-P\left(X-\mu\geq\lambda\right)\begin{cases}
+\end_layout
+
+\begin_layout Claim
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Formula $P\left(X-\mu\geq\lambda\right)\begin{cases}
 \leq\frac{\sigma}{\sigma+\lambda^{2}} & \lambda>0\\
 \geq1-\frac{\sigma}{\sigma+\lambda^{2}} & \lambda<0
-\end{cases}
-\]
+\end{cases}$
+\end_inset
 
+
+\begin_inset space \hfill{}
 \end_inset
 
 

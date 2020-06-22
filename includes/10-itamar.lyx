@@ -1277,17 +1277,15 @@ status open
 
 
 \backslash
-vspace{-2.5em}
+hspace*{
+\backslash
+fill}
 \end_layout
 
 \end_inset
 
 
-\begin_inset Formula 
-\[
-Cov\left(X,Y\right)=E\left[\left(X-E\left[X\right]\right)\left(Y-E\left[Y\right]\right)\right]=E\left[XY\right]-E\left[X\right]E\left[Y\right]
-\]
-
+\begin_inset Formula $Cov\left(X,Y\right)=E\left[\left(X-E\left[X\right]\right)\left(Y-E\left[Y\right]\right)\right]=E\left[XY\right]-E\left[X\right]E\left[Y\right]$
 \end_inset
 
 
@@ -1298,7 +1296,9 @@ status open
 
 
 \backslash
-vspace{-1.5em}
+hspace*{
+\backslash
+fill}
 \end_layout
 
 \end_inset
