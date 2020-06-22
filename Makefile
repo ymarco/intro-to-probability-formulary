@@ -1,4 +1,4 @@
-LATEX=latexmk -interaction=nonstopmode -pdf -xelatex
+LATEX=latexmk -interaction=nonstopmode -pdf -xelatex --synctex=1
 
 LYXS=$(wildcard includes/*.lyx)
 LYXINCLUDES=$(patsubst %.lyx,%.bare_tex,$(LYXS))
