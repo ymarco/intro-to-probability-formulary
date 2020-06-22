@@ -289,12 +289,82 @@ theorems-ams-extended
 \end_inset
 
 ת אזי 
-\begin_inset Formula $\min\left\{ X,Y\right\} \sim Ber\left(pq\right),\max\left\{ X,Y\right\} \sim Ber\left(\left(1-p\right)\left(1-q\right)\right)$
+\begin_inset Newline newline
 \end_inset
 
-.
- 
-\begin_inset Formula $P\left(X=Y\right)=1-p-q+2pq,P\left(X>Y\right)=p\left(1-q\right),E\left[X\mid X>Y\right]=\frac{pq}{P\left(X=Y\right)}$
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\begin{array}{ccc}
+\min\left\{ X,Y\right\} \sim Ber\left(pq\right) &  & \max\left\{ X,Y\right\} \sim Ber\left(\left(1-p\right)\left(1-q\right)\right)\\
+P\left(X=Y\right)=1-p-q+2pq &  & P\left(X>Y\right)=p\left(1-q\right)
+\end{array}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $E\left[X\mid X>Y\right]=\frac{pq}{P\left(X=Y\right)}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
 \end_inset
 
 
