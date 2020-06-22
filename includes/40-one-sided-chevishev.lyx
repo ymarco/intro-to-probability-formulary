@@ -1,0 +1,192 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage[use-david]{culmus}
+\end_preamble
+\use_default_options true
+\begin_modules
+TheoremsHeb
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "helvet" "default"
+\font_typewriter "courier" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\headheight 0.5in
+\headsep 0.5in
+\footskip 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 1
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Claim
+יהי 
+\begin_inset Formula $X$
+\end_inset
+
+ משתנה מקרי בעל תוחלת 
+\begin_inset Formula $\mu$
+\end_inset
+
+ ושונות 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula 
+\[
+P\left(X-\mu\geq\lambda\right)\begin{cases}
+\leq\frac{\sigma}{\sigma+\lambda^{2}} & \lambda>0\\
+\geq1-\frac{\sigma}{\sigma+\lambda^{2}} & \lambda<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נניח כי 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $Y=X-\mu$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $E\left[Y\right]=0$
+\end_inset
+
+ ו-
+\begin_inset Formula $\mathrm{Var}\left(Y\right)=\sigma$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $u\geq0$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+P\left(X-E\left[X\right]\geq\lambda\right)=P\left(Y\geq\lambda\right)=P\left(Y+u\geq\lambda+u\right)\leq P\left(\left(Y+u\right)^{2}\geq\left(\lambda+u\right)^{2}\right)\leq\frac{E\left[\left(Y+u\right)^{2}\right]}{\left(\lambda+u\right)^{2}}=\frac{\sigma+u^{2}}{\left(\lambda+u\right)^{2}}
+\]
+
+\end_inset
+
+כאשר האי-שוויון האחרון נובע ממרקוב.
+ נבחר 
+\begin_inset Formula $u=\frac{\sigma}{\lambda}$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $P\left(X-E\left[X\right]\geq\lambda\right)\leq\frac{\sigma}{\lambda^{2}+\sigma}$
+\end_inset
+
+.
+ כעת נניח כי 
+\begin_inset Formula $\lambda<0$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $\alpha=-\lambda$
+\end_inset
+
+ ואז לכל 
+\begin_inset Formula $u\geq0$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+P\left(X-E\left[X\right]<\lambda\right)=P\left(-Y>\alpha\right)\leq\frac{\sigma}{\alpha^{2}+\sigma}=\frac{\sigma}{\lambda^{2}+\sigma}
+\]
+
+\end_inset
+
+לכן מעיקרון המשלים נקבל 
+\begin_inset Formula $P\left(X-E\left[X\right]\geq\lambda\right)=1-\frac{\sigma}{\lambda^{2}+\sigma}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_body
+\end_document
