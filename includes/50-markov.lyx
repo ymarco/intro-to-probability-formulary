@@ -1,0 +1,361 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage[use-david]{culmus}
+\end_preamble
+\use_default_options true
+\begin_modules
+TheoremsHeb
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "helvet" "default"
+\font_typewriter "courier" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\headheight 0.5in
+\headsep 0.5in
+\footskip 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 1
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Theorem
+אם השרשרת אי-פריקה אז לכל התפלגות התחלתית 
+\begin_inset Formula $\mu$
+\end_inset
+
+ יש התכנסות ממוצעת.
+ כלומר,
+\begin_inset Formula 
+\[
+\lim_{t\rightarrow\infty}\frac{1}{t}\sum_{s=0}^{t-1}P_{\mu}\left(X_{s}=y\right)=\pi\left(y\right)
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $y\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+לכל מצב 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $T\left(x\right)=\left\{ t\geq1\mid P_{x}\left(X_{t}=x\right)>0\right\} $
+\end_inset
+
+ זמני החזרה האפשריים ל-
+\begin_inset Formula $x$
+\end_inset
+
+ ונגדיר את 
+\series bold
+המחזור של 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\series default
+להיות 
+\begin_inset Formula $\gcd\left(T\left(x\right)\right)$
+\end_inset
+
+.
+ השרשרת נקראת 
+\series bold
+חסרת מחזור
+\series default
+ אם כל 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ בעל מחזור 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+)המשפט הארגודי( לכל שרשרת אי-פריקה וחסרת מחזור ולכל התפלגות התחלתית 
+\begin_inset Formula $\mu$
+\end_inset
+
+ יש התכנסות נקודתית.
+ כלומר, לכל 
+\begin_inset Formula $y\in S$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\underset{t\rightarrow\infty}{\lim}P_{\mu}\left(X_{t}=y\right)=\pi\left(y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+בשרשרת מרקוב אי-פריקה המחזור של כל המצבים זהה.
+\end_layout
+
+\begin_layout Corollary
+שרשרת מרקוב אי-פריקה היא חסרת מחזור אם קיים 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ עם מחזור 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim
+עבור שרשרת מרקוב אי-פריקה וחסרת מחזור קיים 
+\begin_inset Formula $r\geq1$
+\end_inset
+
+ )שלא תלוי ב-
+\begin_inset Formula $x,y$
+\end_inset
+
+( כך שלכל 
+\begin_inset Formula $x,y\in S$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P_{x}\left(X_{r}=y\right)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
+יהי 
+\begin_inset Formula $G=\left\langle V,E\right\rangle $
+\end_inset
+
+ גרף ללא לולאות עצמיות וללא קשתות כפולות.
+ נסמן דרגה של קודקוד 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ ב-
+\begin_inset Formula $\deg\left(v\right)$
+\end_inset
+
+.
+ לכל קודקוד בגרף 
+\begin_inset Formula $v$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $p_{v},q_{v}\geq0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $p_{v}+q_{v}\deg\left(v\right)=1$
+\end_inset
+
+.
+ עבור שרשרת מרקוב המוגדרת על ידי 
+\begin_inset Formula $S=V$
+\end_inset
+
+ והסתברויות
+\begin_inset Formula 
+\[
+P\left(v,w\right)=\begin{cases}
+p_{v} & v=w\\
+q_{v} & \left\{ v,w\right\} \in E\\
+0 & \mathrm{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+יש התפלגות סטציונרית 
+\begin_inset Formula $\pi$
+\end_inset
+
+ מהצורה הבאה: 
+\begin_inset Formula $\pi\left(v\right)=\frac{c}{q_{v}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $c>0$
+\end_inset
+
+ קבוע המבטיח כי 
+\begin_inset Formula $\sum_{v\in V}\pi\left(v\right)=1$
+\end_inset
+
+.
+ במקרה של הילוך מקרי פשוט מתקיים 
+\begin_inset Formula $\pi\left(x\right)=\frac{\deg\left(x\right)}{\sum_{y\in S}\deg\left(y\right)}=\frac{\deg\left(x\right)}{2\left|E\right|}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ כי 
+\begin_inset Formula $q_{v}=\frac{1}{\deg\left(v\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+)שרשראות לידה ומוות( שרשרת מרקוב היא שרשרת לידה ומוות אם 
+\begin_inset Formula $S=\left\{ 0,\ldots,n\right\} $
+\end_inset
+
+ ומותר לעבור ממצב 
+\begin_inset Formula $i$
+\end_inset
+
+ למצב 
+\begin_inset Formula $i+1$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+, למצב 
+\begin_inset Formula $i$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ או למצב 
+\begin_inset Formula $i-1$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $q_{i}$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $q_{i}+r_{i}+p_{i}=1$
+\end_inset
+
+ ו-
+\begin_inset Formula $q_{0}=p_{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Claim
+כל שרשרת לידה ומוות היא הפיכה ביחס להתפלגות הסטציונרית 
+\begin_inset Formula $\pi$
+\end_inset
+
+ המוגדרת על ידי 
+\begin_inset Formula $\pi=cw$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $w\left(k\right)=\prod_{i=1}^{k}\frac{p_{i-1}}{q_{i}}$
+\end_inset
+
+, 
+\begin_inset Formula $w\left(0\right)=1$
+\end_inset
+
+ ו-
+\begin_inset Formula $c>0$
+\end_inset
+
+ קבוע נרמול.
+\end_layout
+
+\end_body
+\end_document
