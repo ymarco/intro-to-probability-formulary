@@ -269,7 +269,7 @@ theorems-ams-extended
 \end_inset
 
 מ על 
-\begin_inset Formula $N$
+\begin_inset Formula $\mathbb{N}$
 \end_inset
 
  אזי 
@@ -344,11 +344,15 @@ E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
 למות מחדו
 \begin_inset Quotes erd
 \end_inset
 
-א: 
+א
+\series default
+: 
 \begin_inset Formula $1\pm x\leq e^{\pm x}$
 \end_inset
 

@@ -1240,6 +1240,19 @@ Var\left(a+X\right) & =Var\left(X\right) & std\left(a+X\right) & =std\left(X\rig
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1.5em}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
