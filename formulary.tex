@@ -1,5 +1,6 @@
 \documentclass[8pt,twocolumn]{extarticle}
 \usepackage[a4paper,margin=0.15in]{geometry} % margins setup
+\usepackage{array}
 \usepackage{preamble}
 
 \newcommand{\newformula}{\noindent\rule{0.5\textwidth}{0.4pt}\par}
@@ -16,7 +17,7 @@
 {}% Body font
 {}% Indent amount
 {\bfseries}% Theorem head font
-{:}% Punctuation after theorem head
+{.}% Punctuation after theorem head
 {.5em}% Space after theorem head
 {}% Theorem head spec (includes/00-test.bare_tex can be left empty, meaning 'normal')
 \theoremstyle{all}
@@ -59,8 +60,21 @@
                                      {\normalfont\large\bfseries\center}}
 \makeatother
 
-\title{דף נוסחאות בדיקה}
-\date{\vspace{-10ex}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\title{\textbf{דף נוסחאות בדיקה}}
+% \and in \author doesn't work in XeTeX, and manually doing this hfill stuff in
+% \author gives an error. So... do it in \date instead.
+\date{
+ \vspace{-7em} % space is expensive!
+ \begin{tabular}{C{0.25\paperwidth} C{0.25\paperwidth} C{0.25\paperwidth}}
+   & & \footnotesize{תמיכה נפשית} \\
+   יואב מרקו & איתמר רוט & יואב רוזין
+ \end{tabular}
+ \vspace{4em} % space is expensive!
+}
 
 \begin{document}
 \maketitle
