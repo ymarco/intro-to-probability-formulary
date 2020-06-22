@@ -1629,7 +1629,7 @@ Cov\left(X,Y\right)=E\left[\left(X-E\left[X\right]\right)\left(Y-E\left[Y\right]
 \end_inset
 
  לעץ עד שמקבלים עץ המשתנה המקרי שסופר כמה כישלונות מתפלג 
-\begin_inset Formula $Geo\left(p\right)-1$
+\begin_inset Formula $Geom\left(p\right)-1$
 \end_inset
 
 .
@@ -1780,7 +1780,7 @@ Cov\left(X,Y\right)=E\left[\left(X-E\left[X\right]\right)\left(Y-E\left[Y\right]
 
 \begin_layout Itemize
 אם 
-\begin_inset Formula $X\sim Geo\left(p\right),Y\sim Geo\left(q\right)$
+\begin_inset Formula $X\sim Geom\left(p\right),Y\sim Geom\left(q\right)$
 \end_inset
 
  ב
@@ -1790,7 +1790,7 @@ Cov\left(X,Y\right)=E\left[\left(X-E\left[X\right]\right)\left(Y-E\left[Y\right]
 ת אז:
 \begin_inset Formula 
 \begin{gather*}
-\min\left(X,Y\right)\sim Geo\left(p+q-pq\right)\\
+\min\left(X,Y\right)\sim Geom\left(p+q-pq\right)\\
 \begin{aligned}P\left(X=Y\right)=\frac{pq}{p+q-pq} &  & P\left(X>Y\right)=\frac{q\left(1-p\right)}{p+q-pq}\end{aligned}
 \\
 E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]
