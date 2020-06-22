@@ -106,7 +106,18 @@
 \end_layout
 
 \begin_layout Claim
-\begin_inset space \hfill{}
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill} 
+\end_layout
+
 \end_inset
 
 
@@ -117,7 +128,18 @@
 \end_inset
 
 
-\begin_inset space \hfill{}
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill} 
+\end_layout
+
 \end_inset
 
 
@@ -178,13 +200,46 @@ P\left(X-E\left[X\right]\geq\lambda\right)=P\left(Y\geq\lambda\right)=P\left(Y+u
 \end_inset
 
  נקבל
-\begin_inset Formula 
-\[
-P\left(X-E\left[X\right]<\lambda\right)=P\left(-Y>\alpha\right)\leq\frac{\sigma}{\alpha^{2}+\sigma}=\frac{\sigma}{\lambda^{2}+\sigma}
-\]
+\end_layout
+
+\begin_layout Proof
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill} 
+\end_layout
 
 \end_inset
 
+
+\begin_inset Formula $P\left(X-E\left[X\right]<\lambda\right)=P\left(-Y>\alpha\right)\leq\frac{\sigma}{\alpha^{2}+\sigma}=\frac{\sigma}{\lambda^{2}+\sigma}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
 לכן מעיקרון המשלים נקבל 
 \begin_inset Formula $P\left(X-E\left[X\right]\geq\lambda\right)=1-\frac{\sigma}{\lambda^{2}+\sigma}$
 \end_inset

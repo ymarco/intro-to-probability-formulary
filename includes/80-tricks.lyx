@@ -310,6 +310,10 @@ theorems-ams-extended
 \end_inset
 
 ת אז:
+\begin_inset VSpace -0.7em
+\end_inset
+
+
 \begin_inset Formula 
 \begin{gather*}
 \min\left(X,Y\right)\sim Geom\left(p+q-pq\right)\\
@@ -318,6 +322,10 @@ theorems-ams-extended
 E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]
 \end{gather*}
 
+\end_inset
+
+
+\begin_inset VSpace -1.5em
 \end_inset
 
 

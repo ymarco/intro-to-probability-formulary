@@ -16,7 +16,7 @@
   { \begin{minipage}{\columnwidth}
       \centering
       \begin{sideways}
-        \begin{tabular}{ R{1.8cm} | R{3cm} | c | c | c | c | c}
+        \begin{tabular}{ R{1.8cm} | R{2.8cm} | c | C{2cm} | c | C{2.1cm} | C{1.5cm}}
           התפלגות  & הסבר
           & $\EX$ & $\EX^2$ & $\Var$ & $P(x=k) =$ & $\supp$ \\
           \hline
@@ -35,7 +35,8 @@
           & ‎\(p\)
                   & ‎\(p\)
                             & ‎\(p(1-p)\)
-                                     & ‎\({\scriptstyle P(X=0) = 1-p,\  P(X\!=\!1) = p}\)
+                                     & ‎\(\begin{cases} 1-p &0 \\
+                                p & 1 \end{cases}\)
                                                   & ‎\(\{0,1\}\) \\
           בינומית
           \null \hspace*{\fill} ‎\(\Bin(n,p)\)

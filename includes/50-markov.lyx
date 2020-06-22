@@ -95,11 +95,7 @@
 
  יש התכנסות ממוצעת.
  כלומר,
-\begin_inset Formula 
-\[
-\lim_{t\rightarrow\infty}\frac{1}{t}\sum_{s=0}^{t-1}P_{\mu}\left(X_{s}=y\right)=\pi\left(y\right)
-\]
-
+\begin_inset Formula $\lim_{t\rightarrow\infty}\frac{1}{t}\sum_{s=0}^{t-1}P_{\mu}\left(X_{s}=y\right)=\pi\left(y\right)$
 \end_inset
 
 לכל 
@@ -243,17 +239,50 @@
 \end_inset
 
  והסתברויות
-\begin_inset Formula 
-\[
-P\left(v,w\right)=\begin{cases}
-p_{v} & v=w\\
-q_{v} & \left\{ v,w\right\} \in E\\
-0 & \mathrm{otherwise}
-\end{cases}
-\]
+\end_layout
+
+\begin_layout Claim
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
 
 \end_inset
 
+
+\begin_inset Formula $P\left(v,w\right)=\begin{cases}
+p_{v} & v=w\\
+q_{v} & \left\{ v,w\right\} \in E\\
+0 & \mathrm{otherwise}
+\end{cases}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Claim
 יש התפלגות סטציונרית 
 \begin_inset Formula $\pi$
 \end_inset
