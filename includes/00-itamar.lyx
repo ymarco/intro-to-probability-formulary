@@ -1278,6 +1278,19 @@ Cov\left(X,Y\right)=E\left[\left(X-E\left[X\right]\right)\left(Y-E\left[Y\right]
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1.5em}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
