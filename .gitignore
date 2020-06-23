@@ -22,7 +22,8 @@
 *.toc
 *.ind
 *.pdf
-.auctex-auto/*
-_region_.tex
+**/.auctex-auto/*
+**/_region_.tex
+**/_region_.prv
 includes.tex
 *.bare_tex
