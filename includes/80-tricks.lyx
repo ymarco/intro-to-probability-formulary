@@ -550,6 +550,57 @@ fill}
 \end_layout
 
 \begin_layout Itemize
+
+\series bold
+סכומי טורים
+\series default
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\begin{array}{ccc}
+\sum_{n=1}^{\infty}nq^{n-1}=\frac{1}{\left(1-q\right)^{2}} &  & \sum_{n=2}^{\infty}n\left(n-1\right)q^{n-2}=\frac{2}{\left(1-q\right)^{3}}\end{array}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill}
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 מטריצה היא 
 \series bold
 דו סטוכסטית
