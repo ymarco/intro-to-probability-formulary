@@ -34,6 +34,7 @@ includes/%.tex: includes/%.lyx
 # remove newlines so sed can work multiline, cut everyting until
 # \begin{document}, add newlines back and remove the outside document env. Now
 # its suitable for \input-ing from another file.
+# TODO https://stackoverflow.com/questions/35965783/
 includes/%.bare_tex: includes/%.tex
 	cat $< |\
 		tr '\n' '\r' |\
