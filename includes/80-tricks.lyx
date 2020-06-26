@@ -113,7 +113,7 @@ theorems-ams-extended
 \begin_inset Formula $X$
 \end_inset
 
- לא חסום זה לא יכול להיות בינומי או היפר גאומטרי
+ לא חסום זה לא יכול להיות בינומי או היפר גאומטרי.
 \end_layout
 
 \begin_layout Itemize
@@ -126,20 +126,20 @@ theorems-ams-extended
 
 \begin_layout Itemize
 אם 
-\begin_inset Formula $0\in supp\left(X\right)$
+\begin_inset Formula $0\in\mathrm{supp}\left(X\right)$
 \end_inset
 
- זה לא גאומטרי/היפר גאומטרי
+ זה לא גאומטרי/היפר גאומטרי.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 אם 
-\begin_inset Formula $supp\left(X\right)=\left\{ a,b\right\} $
+\begin_inset Formula $\mathrm{supp}\left(X\right)=\left\{ a,b\right\} $
 \end_inset
 
  אזי 
-\begin_inset Formula $Var\left(X\right)=\left(E\left[X\right]-a\right)\left(E\left[X\right]-b\right)$
+\begin_inset Formula $Var\left(X\right)=\left(E\left[X\right]-a\right)\left(b-E\left[X\right]\right)$
 \end_inset
 
 .
@@ -154,7 +154,7 @@ theorems-ams-extended
 \begin_inset Formula $Geom\left(p\right)-1$
 \end_inset
 
-.
+..
 \end_layout
 
 \begin_layout Itemize
@@ -192,7 +192,7 @@ theorems-ams-extended
 \begin_inset Formula $Var\left(S\right)=Var\left(X\right)E\left[N\right]+E\left[X^{2}\right]Var\left(N\right)$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Itemize
@@ -233,11 +233,11 @@ theorems-ams-extended
 \end_inset
 
  )לדוגמה כמות מכוניות שנכנסות לצוצת שבהסתברות מסויימת מתקלקלות( אזי 
-\begin_inset Formula $Y\sim Bin\left(\lambda p\right)$
+\begin_inset Formula $Y\sim Poi\left(\lambda p\right)$
 \end_inset
 
  ו-
-\begin_inset Formula $X,Y$
+\begin_inset Formula $X,X-Y$
 \end_inset
 
  בלתי תלויים.
@@ -256,7 +256,7 @@ theorems-ams-extended
 \begin_inset Formula $\lambda\rightarrow\infty$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Itemize
@@ -273,10 +273,10 @@ theorems-ams-extended
 \end_inset
 
  אזי 
-\begin_inset Formula $E\left[X\right]=\sum_{k=0}^{\infty}P\left(X\geq k\right)$
+\begin_inset Formula $E\left[X\right]=\sum_{k=1}^{\infty}P\left(X\geq k\right)$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Itemize
@@ -309,7 +309,7 @@ fill}
 
 
 \begin_inset Formula $\begin{array}{ccc}
-\min\left\{ X,Y\right\} \sim Ber\left(pq\right) &  & \max\left\{ X,Y\right\} \sim Ber\left(\left(1-p\right)\left(1-q\right)\right)\\
+\min\left\{ X,Y\right\} \sim Ber\left(pq\right) &  & \max\left\{ X,Y\right\} \sim Ber\left(1-\left(1-p\right)\left(1-q\right)\right)\\
 P\left(X=Y\right)=1-p-q+2pq &  & P\left(X>Y\right)=p\left(1-q\right)
 \end{array}$
 \end_inset
@@ -349,7 +349,7 @@ fill}
 \end_inset
 
 
-\begin_inset Formula $E\left[X\mid X>Y\right]=\frac{pq}{P\left(X=Y\right)}$
+\begin_inset Formula $E\left[X\mid X=Y\right]=\frac{pq}{P\left(X=Y\right)}$
 \end_inset
 
 
@@ -476,7 +476,7 @@ fill}
 \end_inset
 
 
-\begin_inset Formula $E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]\qquad P\left(X\text{even }\right)=\frac{1-p}{2-p}$
+\begin_inset Formula $E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]$
 \end_inset
 
 
@@ -495,7 +495,7 @@ fill}
 \end_inset
 
 
-\begin_inset space ~
+\begin_inset Newline newline
 \end_inset
 
 
@@ -515,10 +515,10 @@ fill}
 \end_inset
 
  הינה 
-\begin_inset Formula $\binom{n}{\frac{n+k}{2}}\left(\frac{1}{2}\right)^{2n}$
+\begin_inset Formula $\binom{n}{\frac{n+k}{2}}\left(\frac{1}{2}\right)^{n}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Itemize
