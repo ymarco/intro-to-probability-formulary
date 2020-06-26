@@ -476,7 +476,7 @@ fill}
 \end_inset
 
 
-\begin_inset Formula $E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]\qquad P\left(X\equiv a\left(\mod b\right)\right)=\frac{p\left(1-p\right)^{a-1}}{1-\left(1-p\right)^{b}}$
+\begin_inset Formula $E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]\qquad P\left(X\text{ even}\right)=\frac{1-p}{2-p}$
 \end_inset
 
 
