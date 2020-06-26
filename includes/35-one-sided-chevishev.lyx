@@ -176,11 +176,45 @@ fill}
 \end_inset
 
  מתקיים
-\begin_inset Formula 
-\[
-P\left(X-E\left[X\right]\geq\lambda\right)=P\left(Y\geq\lambda\right)=P\left(Y+u\geq\lambda+u\right)\leq P\left(\left(Y+u\right)^{2}\geq\left(\lambda+u\right)^{2}\right)\leq\frac{E\left[\left(Y+u\right)^{2}\right]}{\left(\lambda+u\right)^{2}}=\frac{\sigma+u^{2}}{\left(\lambda+u\right)^{2}}
-\]
+\begin_inset Newline newline
+\end_inset
 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $P\left(X-E\left[X\right]\geq\lambda\right)=P\left(Y\geq\lambda\right)=P\left(Y+u\geq\lambda+u\right)\leq P\left(\left(Y+u\right)^{2}\geq\left(\lambda+u\right)^{2}\right)\leq\frac{E\left[\left(Y+u\right)^{2}\right]}{\left(\lambda+u\right)^{2}}=\frac{\sigma+u^{2}}{\left(\lambda+u\right)^{2}}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace*{
+\backslash
+fill} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 כאשר האי-שוויון האחרון נובע ממרקוב.
