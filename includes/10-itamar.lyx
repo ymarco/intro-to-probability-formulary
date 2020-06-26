@@ -109,7 +109,7 @@ theorems-ams-extended
 \begin_inset Formula $I$
 \end_inset
 
- קבוצת אינדקסים( אז 
+ קבוצת אינדקסים( אז מתקיים 
 \begin_inset Formula $\left(\bigcup_{i\in I}A_{i}\right)^{c}=\bigcap_{i\in I}A_{i}^{c}$
 \end_inset
 
@@ -124,7 +124,7 @@ theorems-ams-extended
 \begin_layout Claim*
 
 \shape italic
-הכלהו הדחה
+הכלה והדחה
 \shape default
 .
 
@@ -135,7 +135,7 @@ theorems-ams-extended
 \begin_inset Formula $P\left(\bigcup_{i=1}^{n}A_{i}\right)=\sum_{\emptyset\neq I\subset\left[n\right]}\left(-1\right)^{i+1}P\left(\bigcap_{i\in I}A_{i}\right)$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_deeper
@@ -149,7 +149,7 @@ theorems-ams-extended
 \begin_inset Formula $P\left(\bigcup_{i=1}^{n}A_{i}\right)\leq\sum_{i=1}^{n}P\left(A_{i}\right)$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_deeper
@@ -212,7 +212,7 @@ theorems-ams-extended
 \end_inset
 
  מאורע.
- אזי מתקיים 
+ אזי מתקיים כי 
 \begin_inset Formula $P\left(A\right)=\sum_{i=1}^{n}P\left(B_{i}\right)P\left(A\mid B_{i}\right)$
 \end_inset
 
@@ -235,7 +235,7 @@ theorems-ams-extended
 \begin_inset Formula $A_{1},\ldots,A_{n}$
 \end_inset
 
- מאורעות כך שמתקיים 
+ מאורעות כך ש-
 \begin_inset Formula $P\left(A_{1}\cap\ldots\cap A_{n-1}\right)>0$
 \end_inset
 
@@ -380,7 +380,7 @@ theorems-ams-extended
 \end_inset
 
 .
- באופן שקול אם 
+ באופן שקול אם מתקיים 
 \begin_inset Formula $P\left(\bigcap_{i=1}^{n}B_{i}\right)=\prod_{i=1}^{n}P\left(B_{i}\right)$
 \end_inset
 
@@ -404,7 +404,7 @@ theorems-ams-extended
 \begin_inset Formula $i$
 \end_inset
 
- ומאורע 
+ ולכל מאורע 
 \begin_inset Formula $A_{i}\subseteq\Omega_{i}$
 \end_inset
 
@@ -425,8 +425,7 @@ theorems-ams-extended
 \begin_inset Formula $P\left(\bigcap_{i=1}^{n}\bar{A}_{i}\right)=\prod_{i=1}^{n}P\left(\bar{A}_{i}\right)$
 \end_inset
 
-.
- בפרט 
+ ובפרט 
 \begin_inset Formula $\bar{A}_{1},\ldots,\bar{A}_{n}$
 \end_inset
 
@@ -513,7 +512,7 @@ theorems-ams-extended
 \begin_inset Formula $f_{1}\left(X_{1}\right),\ldots,f_{n}\left(X_{n}\right)$
 \end_inset
 
- בלתי תלויים
+ בלתי תלויים.
 \end_layout
 
 \begin_deeper
@@ -620,7 +619,7 @@ theorems-ams-extended
 \begin_inset Formula $X\sim\mathrm{Bin}\left(n,p\right),Y\sim\mathrm{Bin}\left(m,p\right)$
 \end_inset
 
- בלתי תלויים אזי מתקיים כי 
+ בלתי תלויים אזי 
 \begin_inset Formula $X+Y\sim\mathrm{Bin}\left(n+m,p\right)$
 \end_inset
 
@@ -701,11 +700,11 @@ theorems-ams-extended
 \begin_inset Formula $k$
 \end_inset
 
- מתקיים 
+ מתקיים כי 
 \begin_inset Formula $\left|P\left(X=k\right)-P\left(Y=k\right)\right|\leq P\left(X\neq Y\right)$
 \end_inset
 
-
+.
 \end_layout
 
 \end_deeper
@@ -820,7 +819,7 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 \begin_inset Formula $X$
 \end_inset
 
- משתנה מקרי עם תוחלת סופית או אי-שלילי אזי 
+ משתנה מקרי עם תוחלת סופית או אי-שלילי אזי מתקיים 
 \begin_inset Formula $E\left[X\right]=\sum_{k\in\mathrm{supp}\left(X\right)}P\left(X=k\right)\cdot k$
 \end_inset
 
@@ -980,7 +979,7 @@ X\left(\omega\right) & X\left(\omega\right)\geq0\\
 \begin_inset Formula $X_{1},...,X_{n}$
 \end_inset
 
- בעלי שונות סופית, אזי 
+ בעלי שונות סופית, אזי מתקיים כי 
 \begin_inset Formula $\mathrm{Var}\left(\sum_{i=1}^{n}X_{i}\right)=\sum_{i=1}^{n}\mathrm{Var}\left(X_{i}\right)+2\sum_{1\leq i<j\leq n}\mathrm{Cov}\left(X_{i},X_{j}\right)$
 \end_inset
 
@@ -1235,7 +1234,7 @@ fill}
 \begin_inset Formula $a>0,b$
 \end_inset
 
- כך ש
+ כך ש-
 \begin_inset Formula $P\left(Y=aX+b\right)=1$
 \end_inset
 
@@ -1251,7 +1250,7 @@ fill}
 \begin_inset Formula $a<0,b$
 \end_inset
 
- כך ש
+ כך ש-
 \begin_inset Formula $P\left(Y=aX+b\right)=1$
 \end_inset
 
@@ -1277,7 +1276,7 @@ fill}
 \begin_inset Formula $A$
 \end_inset
 
- מאורע כך ש
+ מאורע כך ש-
 \begin_inset Formula $P\left(A>0\right)$
 \end_inset
 
@@ -1290,7 +1289,7 @@ fill}
 \begin_inset Formula $A$
 \end_inset
 
- מוגדרת כ
+ מוגדרת להיות 
 \begin_inset Formula $E\left[X\mid A\right]=\sum_{\omega\in\Omega}X\left(\omega\right)P\left(\omega\mid A\right)=\sum_{k\in\mathrm{supp}\left(X\right)}k\cdot P\left(X=k\mid A\right)$
 \end_inset
 
@@ -1319,34 +1318,13 @@ fill}
 \begin_inset Formula $P\left(Y=Y\left(\omega\right)\right)=0$
 \end_inset
 
- אז נגדיר את התוחלת להיות
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
+ אז נגדיר את התוחלת להיות 
 \numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-0
+
+\begin_inset Formula $0$
+\end_inset
+
+
 \numeric off
 .
 \end_layout
@@ -1357,7 +1335,7 @@ fill}
 \begin_inset Formula $X,Y$
 \end_inset
 
- משתנים מקריים כך ש
+ משתנים מקריים כך ש-
 \begin_inset Formula $X$
 \end_inset
 
@@ -1379,6 +1357,7 @@ fill}
 
 \begin_deeper
 \begin_layout Claim*
+מתקיים 
 \begin_inset Formula $E\left[aX_{1}+bX_{2}\mid Y\right]=aE\left[X_{1}\mid Y\right]+bE\left[x_{2}\mid Y\right]$
 \end_inset
 
@@ -1418,7 +1397,7 @@ fill}
 \end_layout
 
 \begin_layout Definition*
-תוחלת של משתנה 
+שונות של משתנה 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1431,31 +1410,19 @@ fill}
 \end_inset
 
 .
- תוחלת של מ
-\begin_inset Quotes erd
-\end_inset
-
-מ 
+ שונות של משתנה מקרי 
 \begin_inset Formula $X$
 \end_inset
 
- בהינתן מ
-\begin_inset Quotes erd
-\end_inset
-
-מ 
+ בהינתן משתנה מקרי 
 \begin_inset Formula $Y$
 \end_inset
 
- הינה מ
-\begin_inset Quotes erd
-\end_inset
-
-מ בעצמה 
+ הינה משתנה מקרי בעצמה 
 \begin_inset Formula $Var\left(X|Y\right)=E\left[\left(X-E\left[X|Y\right]\right)^{2}|Y\right]$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Theorem*
