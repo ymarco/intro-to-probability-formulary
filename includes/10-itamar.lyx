@@ -1466,7 +1466,7 @@ fill}
 \end_deeper
 \end_deeper
 \begin_layout Section
-תוחלת מותנה
+תוחלת ושונות מותנה
 \end_layout
 
 \begin_layout Definition*
@@ -1617,6 +1617,47 @@ fill}
 
 ל 
 \begin_inset Formula $P\left(E\left[X\mid Y\right]=E\left[X\right]\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+תוחלת של משתנה 
+\begin_inset Formula $X$
+\end_inset
+
+ בהינתן 
+\begin_inset Formula $A$
+\end_inset
+
+ מוגדרת להיות 
+\begin_inset Formula $Var\left(X|A\right)=E\left[\left(X-E\left[X|A\right]\right)^{2}|A\right]=E\left[X^{2}|A\right]-E^{2}\left[X|A\right]$
+\end_inset
+
+.
+ תוחלת של מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X$
+\end_inset
+
+ בהינתן מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $Y$
+\end_inset
+
+ הינה מ
+\begin_inset Quotes erd
+\end_inset
+
+מ בעצמה 
+\begin_inset Formula $Var\left(X|Y\right)=E\left[\left(X-E\left[X|Y\right]\right)^{2}|Y\right]$
 \end_inset
 
 
