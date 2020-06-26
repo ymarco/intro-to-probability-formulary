@@ -1064,10 +1064,6 @@ vspace{-1.5em}
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-
 \begin_inset ERT
 status open
 
@@ -1099,6 +1095,10 @@ hspace*{
 fill}
 \end_layout
 
+\end_inset
+
+
+\begin_inset space ~
 \end_inset
 
 
