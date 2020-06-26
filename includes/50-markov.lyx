@@ -362,22 +362,6 @@ fill}
 .
 \end_layout
 
-\begin_layout Definition
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pagebreak
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Claim
 כל שרשרת לידה ומוות היא הפיכה ביחס להתפלגות הסטציונרית 
 \begin_inset Formula $\pi$
