@@ -261,6 +261,18 @@ theorems-ams-extended
 
 \begin_layout Itemize
 אם 
+\begin_inset Formula $X_{1},\ldots,X_{r}\sim\mathrm{Geom}\left(p\right)$
+\end_inset
+
+ בלתי תלויים אז 
+\begin_inset Formula $X_{1}+\ldots+X_{r}\sim\mathrm{NB}\left(r,p\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אם 
 \begin_inset Formula $X_{\lambda}\sim Poi\left(\lambda\right)$
 \end_inset
 

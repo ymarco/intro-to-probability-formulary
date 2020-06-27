@@ -173,6 +173,15 @@ theorems-ams-extended
 \end_inset
 
 .
+ יתר על כן, לכל פונקציה 
+\begin_inset Formula $f:S\rightarrow\mathbb{R}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\lim_{t\rightarrow\infty}E_{\mu}\left[f\left(X_{t}\right)\right]=\sum_{x\in S}f\left(x\right)\pi\left(x\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Lemma
