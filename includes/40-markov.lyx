@@ -108,7 +108,7 @@ theorems-ams-extended
 \begin_inset Formula $P_{\mu}\left(X_{0}=x_{0},X_{1}=x_{1}\right)=\mu\left(x_{0}\right)P\left(x_{0},x_{1}\right),P_{\mu}\left(X_{0}=x_{0}\right)=\mu\left(x_{0}\right)$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_deeper
@@ -129,7 +129,7 @@ theorems-ams-extended
 \begin_inset Formula $\mu\left(x_{0}\right)=1$
 \end_inset
 
-
+.
 \end_layout
 
 \end_deeper
@@ -239,7 +239,7 @@ fill}
 \begin_inset Formula $P_{\pi}\left(X_{1}=x\right)=\pi$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Theorem*
@@ -263,7 +263,7 @@ fill}
 \end_layout
 
 \begin_layout Theorem*
-אם שרשרת מרקוב אי פריקה אז ההתפלגות הסטציונרית יחידה
+אם שרשרת מרקוב אי פריקה אז ההתפלגות הסטציונרית יחידה.
 \end_layout
 
 \begin_layout Claim*
@@ -279,7 +279,7 @@ fill}
 \begin_inset Formula $\left(P\cdot f\right)\left(x\right)=E_{s}\left[f\left(X_{1}\right)\right]$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Corollary*
@@ -291,7 +291,7 @@ fill}
 \begin_inset Formula $\left(P^{t}\cdot f\right)\left(x\right)=E_{x}\left[f\left(X_{t}\right)\right]$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Definition*

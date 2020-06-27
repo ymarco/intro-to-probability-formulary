@@ -154,7 +154,7 @@ theorems-ams-extended
 \begin_inset Formula $Geom\left(p\right)-1$
 \end_inset
 
-..
+.
 \end_layout
 
 \begin_layout Itemize
@@ -717,11 +717,7 @@ fill}
 \numeric on
 2
 \numeric off
- טריקים לחישוב שונות משותפת: 
-\begin_inset Formula $E\left[XY\right]=E\left[YE\left[X|Y\right]\right]$
-\end_inset
-
-
+ טריקים לחישוב שונות משותפת:
 \begin_inset Newline newline
 \end_inset
 
@@ -822,7 +818,7 @@ fill}
 \uwave default
 \noun default
 \color inherit
-נעבור למשלים ורק אז נשתמש בצבישב.
+נעבור למשלים ורק אז נשתמש בצ'בישב.
 \end_layout
 
 \end_body

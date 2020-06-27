@@ -10,7 +10,7 @@
 \begin{document}
 ‏\section{משפט הגבול המרכזי}
 יהיו $X_{1},...,X_{n}$ מ“מ ב“ת שווי התפלגות בעלי שונות
-סופית, אזי המ“מ המוגדר $\widehat{S_{n}}=\frac{\sum_{i=1}^{n}X_{i}-n\EX\left[X_{1}\right]}{\sqrt{n\Var\left(X_{1}\right)}}$
+סופית, אזי המשתנה המקרי המוגדר $\widehat{S_{n}}=\frac{\sum_{i=1}^{n}X_{i}-n\EX\left[X_{1}\right]}{\sqrt{n\Var\left(X_{1}\right)}}$
 (תוחלתו 0, שונות 1) מתכנס בהתפלגות להתפלגות גאוסיאנית, כלומר:
 
 \hspace*{\fill}
@@ -19,18 +19,18 @@
 P\left(a\leq\widehat{S_{n}}\leq b\right)=\frac{1}{\sqrt{2\pi}}\int_{a}^{b}e^{\frac{-x^{2}}{2}}dx=\varPhi\left(b\right)-\varPhi\left(a\right)\)
 
 ‏\section{אי שוויונות} ‏\begin{claim}[א"ש מרקוב]
-  אם ‎\(X\geq 0\) מ"מ עם תוחלת סופית אז לכל ‎\(t>0\) מתקיים
+  אם ‎\(X\geq 0\) משתנה מקרי עם תוחלת סופית אז לכל ‎\(t>0\) מתקיים
   % manual linebreak, otherwise breqn breaks it at the t) which is damn ugly
   ‎\(P(X\geq t)\\ \leq  \frac{\EX[X]}{t}\).
-  אלטרנטיבית, ‎\(P(X \geq t \EX[X]) \leq \frac{1}{t}\) ‏\end{claim}
+  אלטרנטיבית, ‎.\(P(X \geq t \EX[X]) \leq \frac{1}{t}\) ‏\end{claim}
 ‏\begin{claim}[א"ש צ'בישב] אם ‎\(X\geq 0\) מ"מ עם תוחלת ושונות סופיים
   אז לכל ‎\(t>0\) מתקיים ‎\( P(\abs{X - \EX[X]} \geq t) \leq \frac{\Var(X)}{t^2} \)
   ‏\end{claim}
 ‏\begin{theorem}[החוק החלש של המספרים הגדולים]
-אם ‎\(X_1, \dots ,X_n\) מ"מ ב"ת שווי הסתברות עם שונות סופית, אז לכל ‎\(\epsilon >0\) מתקיים
+אם ‎\(X_1, \dots ,X_n\) מ"מ ב"ת שווי הסתברות עם שונות סופית, אז לכל ‎\(\varepsilon >0\) מתקיים
 
 \hspace*{\fill}
-‎\( P\left(\abs{\frac{1}{n} \sum_{i=1}^n X_i - \EX[x_1]} > \epsilon\right) \overset{n\to \infty}{\longrightarrow} 0 \)
+‎\( P\left(\abs{\frac{1}{n} \sum_{i=1}^n X_i - \EX[x_1]} > \varepsilon\right)\xrightarrow[n\rightarrow\infty]{} 0 \)
 \hspace*{\fill}
 ‏\end{theorem}
 

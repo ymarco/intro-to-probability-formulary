@@ -587,7 +587,7 @@ theorems-ams-extended
 \end_inset
 
  מתקיים 
-\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}\binom{n}{k}p_{n}^{k}\left(1-p_{n}\right)^{n-k}=\frac{e^{-\lambda}\lambda^{k}}{k!}$
+\begin_inset Formula $\lim_{n\rightarrow\infty}\binom{n}{k}p_{n}^{k}\left(1-p_{n}\right)^{n-k}=\frac{e^{-\lambda}\lambda^{k}}{k!}$
 \end_inset
 
 .
@@ -619,7 +619,7 @@ theorems-ams-extended
 \begin_inset Formula $X\sim\mathrm{Bin}\left(n,p\right),Y\sim\mathrm{Bin}\left(m,p\right)$
 \end_inset
 
- בלתי תלויים אזי 
+ בלתי תלויים אז מתקיים כי 
 \begin_inset Formula $X+Y\sim\mathrm{Bin}\left(n+m,p\right)$
 \end_inset
 
