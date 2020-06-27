@@ -139,13 +139,14 @@ theorems-ams-extended
 \end_inset
 
  ותהי 
-\begin_inset Formula $V\subset S^{k}$
+\begin_inset Formula $V\subseteq S^{k}$
 \end_inset
 
 , יהיו 
 \begin_inset Formula $x_{k},..,x_{n}\in S$
 \end_inset
 
+.
  אזי
 \end_layout
 
@@ -165,7 +166,7 @@ fill}
 \end_inset
 
 
-\begin_inset Formula $P_{\mu}\left(X_{k+1}=x_{k+1},...,X_{n}=x_{m}|X_{k}=x_{k},\left(X_{0},...,x_{v-1}\right)\in V\right)=P_{x_{k}}k\left(X_{1}=x_{k+1},...,X_{n-k}=x_{n}\right)$
+\begin_inset Formula $P_{\mu}\left(X_{k+1}=x_{k+1},\ldots,X_{n}=x_{n}\mid X_{k}=x_{k},\left(X_{0},...,X_{k-1}\right)\in V\right)=P_{x_{k}}\left(X_{1}=x_{k+1},\ldots,X_{n-k}=x_{n}\right)$
 \end_inset
 
 
@@ -191,8 +192,8 @@ fill}
 \begin_inset Formula $\mu$
 \end_inset
 
- כך ש
-\begin_inset Formula $P_{\mu}\left(X_{k}=x_{k},...,\left(x_{0},...,x_{k-1}\right)\in V\right)>0$
+ כך ש-
+\begin_inset Formula $P_{\mu}\left(X_{k}=x_{k},\left(X_{0},\ldots,X_{k-1}\right)\in V\right)>0$
 \end_inset
 
 .

@@ -599,7 +599,7 @@ theorems-ams-extended
 קונבולוציה
 \shape default
 .
- לכל משתנים מקריים 
+ לכל משתנים מקריים בלתי תלויים 
 \begin_inset Formula $X,Y$
 \end_inset
 
