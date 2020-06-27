@@ -515,7 +515,7 @@ fill}
 \end_inset
 
  הינה 
-\begin_inset Formula $\binom{n}{\frac{n+k}{2}}\left(\frac{1}{2}\right)^{n}$
+\begin_inset Formula $\binom{n}{\nicefrac{\left(n+k\right)}{2}}\left(\frac{1}{2}\right)^{n}$
 \end_inset
 
 .
