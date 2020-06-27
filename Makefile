@@ -7,7 +7,7 @@ TEXINCLUDES=$(patsubst %.tex,%.bare_tex,$(TEXS))
 
 formulary.pdf: formulary.tex includes.tex
 
-includes.tex: $(LYXINCLUDES) $(TEXINCLUDES)
+includes.tex: $(LYXINCLUDES) $(TEXINCLUDES) preamble.sty macros.sty
 	ls includes/*.bare_tex | sed 's/\(.*\)/\\input{\1}/' > $@
 
 %.pdf: %.tex
