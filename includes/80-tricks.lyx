@@ -208,7 +208,7 @@ theorems-ams-extended
 \begin_inset Formula $P\left(X=n+k\mid X>n\right)=P\left(X=k\right)$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Itemize
@@ -476,7 +476,7 @@ fill}
 \end_inset
 
 
-\begin_inset Formula $E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]\qquad P\left(X\equiv a\left(\mod b\right)\right)=\frac{p\left(1-p\right)^{a-1}}{1-\left(1-p\right)^{b}}$
+\begin_inset Formula $E\left[X\mid X=Y\right]=E\left[\min\left(X,Y\right)\right]\qquad P\left(X\equiv a\mod b\right)=\frac{p\left(1-p\right)^{a-1}}{1-\left(1-p\right)^{b}}$
 \end_inset
 
 
@@ -546,7 +546,7 @@ fill}
 \begin_inset Formula $x\in\left[0,\frac{1}{2}\right]$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Itemize
@@ -574,8 +574,8 @@ fill}
 \end_inset
 
 
-\begin_inset Formula $\begin{array}{ccccc}
-\sum_{n=0}^{\infty}q^{n}=\frac{1}{1-q} &  & \sum_{n=1}^{\infty}nq^{n-1}=\frac{1}{\left(1-q\right)^{2}} &  & \sum_{n=2}^{\infty}n\left(n-1\right)q^{n-2}=\frac{2}{\left(1-q\right)^{3}}\end{array}$
+\begin_inset Formula $\begin{array}{ccc}
+\sum_{n=k}^{\infty}n\left(n-1\right)\ldots\left(n-k+1\right)q^{n}=\frac{k!}{\left(1-q\right)^{k}} &  & \sum_{k=1}^{n}k^{2}=\frac{n\left(n+1\right)\left(2n+1\right)}{6}\end{array}$
 \end_inset
 
 
@@ -614,7 +614,10 @@ fill}
 
 
 \begin_inset Formula $\begin{array}{ccc}
-\sum_{k=0}^{n}k\binom{n}{k}=n2^{n-1} &  & \sum_{\mathbb{N}_{even}\ni k=0}^{n}\binom{n}{k}p^{k}=\frac{\left(p+1\right)^{n}+\left(p-1\right)^{n}}{2}\end{array}$
+\sum_{k=0}^{n}k\binom{n}{k}=n2^{n-1} &  & \sum_{\substack{k=0\\
+k\in\mathbb{N}_{\mathrm{even}}
+}
+}^{n}\binom{n}{k}p^{k}=\frac{\left(p+1\right)^{n}+\left(p-1\right)^{n}}{2}\end{array}$
 \end_inset
 
 
@@ -653,7 +656,7 @@ fill}
 
 
 \begin_inset Formula $\begin{array}{ccc}
-\sum_{k=0}^{n}a_{0}+kd=\frac{\left(n+1\right)\left(2a_{0}+nd\right)}{2} &  & \sum_{k=0}^{n}a_{0}q^{n}=\frac{a_{0}\left(1-q^{n+1}\right)}{1-q}\sum_{k=1}^{n}k^{2}=\frac{n\left(n+1\right)\left(2n+1\right)}{6}\end{array}$
+\sum_{k=0}^{n}a_{0}+kd=\frac{\left(n+1\right)\left(2a_{0}+nd\right)}{2} &  & \sum_{k=0}^{n}a_{0}q^{n}=\frac{a_{0}\left(1-q^{n+1}\right)}{1-q}\end{array}$
 \end_inset
 
 

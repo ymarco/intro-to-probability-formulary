@@ -619,7 +619,7 @@ theorems-ams-extended
 \begin_inset Formula $X\sim\mathrm{Bin}\left(n,p\right),Y\sim\mathrm{Bin}\left(m,p\right)$
 \end_inset
 
- בלתי תלויים אז מתקיים כי 
+ משתנים מקריים בלתי תלויים אזי 
 \begin_inset Formula $X+Y\sim\mathrm{Bin}\left(n+m,p\right)$
 \end_inset
 
