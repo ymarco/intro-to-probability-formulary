@@ -1439,7 +1439,26 @@ fill}
 \end_layout
 
 \begin_layout Proof
-מתקיים
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-3em}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{align*}
 \mathrm{Var}\left(X\right) & =E\left[X^{2}\right]-E\left[X\right]^{2}=E\left[E\left[X^{2}\mid Y\right]\right]-E\left[E\left[X\mid Y\right]\right]^{2}\\
@@ -1450,7 +1469,20 @@ fill}
 
 \end_inset
 
-כנדרש.
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1em}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
