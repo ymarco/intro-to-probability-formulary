@@ -16,6 +16,7 @@
   { \begin{minipage}{\columnwidth}
       \centering
       \begin{sideways}
+        \def\arraystretch{1.6}
         \begin{tabular}{ R{1.7cm} | R{2.8cm} | c | C{2.1cm} | c | C{2.1cm} | C{1.7cm}}
           התפלגות  & הסבר
           & $\EX$ & $\EX[X^2]$ & $\Var$ & $P(x=k) =$ & $\supp$ \\
@@ -28,7 +29,6 @@
                             & ‎\(\frac{n^2 -1}{12}\)
                                      & ‎\(\nicefrac{1}{n}\)
                                                   & ‎\(\{1, \dots ,n\}\)\\
-          \hline
           ברנולי
           \null \hspace*{\fill} ‎\(\Ber(p)\)
                    & הצלחה בסיכוי ‎\(p\), כשלון בסיכוי ‎\(1-p\).
@@ -38,7 +38,6 @@
                                      & ‎\(\begin{cases} 1-p &0 \\
                                 p & 1 \end{cases}\)
                                                   & ‎\(\{0,1\}\) \\
-          \hline
           בינומית
           \null \hspace*{\fill} ‎\(\Bin(n,p)\)
                    & סכום של ‎\(n\) ניסויים ב"ת, כשכל אחד מהם מצליח בהסתברות ‎\(p\).
@@ -47,7 +46,6 @@
                             & ‎\(n p (1-p)\)
                                      & ‎\(\binom{n}{k}p^k (1-p)^{n-k}\)
                                                   & ‎\(\{0, \dots ,n\}\) \\
-          \hline
           בינומית שלילית
           \null \hspace*{\fill}\(\NB(r,p)\)
                    & כמות הניסויים שמבצעים עם סיכוי הצלחה ‎\(p\) עד ‎\(n\) הצלחות (כולל).
@@ -56,7 +54,6 @@
                             & ‎\(\frac{(1-p)n}{p^2}\)
                                      &  \(\binom{k-1}{n-1}p^n(1-p)^{k-n}\)
                                                   & \(\{n,n+1, \dots \}\) \\
-          \hline
           גאומטרית
           \null \hspace*{\fill} \(\Geom(p)\)
                    & מטילים מטבע עם הסתברות ‎\(p\) לעץ וסופרים הטלות על עד הראשון (כולל).
@@ -65,7 +62,6 @@
                             & ‎\(\frac{1-p}{p^2}\)
                                      & ‎\((1-p)^{k-1}p\)
                                                   & ‎\(\NN_{1+}\) \\
-          \hline
           היפר גאומטרית \hspace*{\fill} \(\HG(N,D,n)\)
                    & דוגמים ‎\(n\) פריטים מאוכלוסיה בגודל ‎\(N\) שבה יש ‎\(D\) מיוחדים.
                      כמה מיוחדים מצאנו?
@@ -75,7 +71,6 @@
                                      & ‎\(\binom{D}{k}\binom{N-D}{n-k}\big{/}\binom{N}{n}\)
                                                   & ‎\(\{0, \dots ,D\}\) \\
 
-          \hline
           פואסון
           \hspace*{\fill}‏\(\Poi(\lambda)\)
                    & מספר הצלחות בתהליך בינומי כאשר ‎\(n\to \infty , p\to 0, n p\to \lambda \).
