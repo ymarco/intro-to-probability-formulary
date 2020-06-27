@@ -1406,7 +1406,7 @@ fill}
 \end_inset
 
  מוגדרת להיות 
-\begin_inset Formula $Var\left(X|A\right)=E\left[\left(X-E\left[X|A\right]\right)^{2}|A\right]=E\left[X^{2}|A\right]-E^{2}\left[X|A\right]$
+\begin_inset Formula $Var\left(X\midA\right)=E\left[\left(X-E\left[X\midA\right]\right)^{2}\midA\right]=E\left[X^{2}\midA\right]-E^{2}\left[X\midA\right]$
 \end_inset
 
 .
@@ -1419,7 +1419,7 @@ fill}
 \end_inset
 
  הינה משתנה מקרי בעצמה 
-\begin_inset Formula $Var\left(X|Y\right)=E\left[\left(X-E\left[X|Y\right]\right)^{2}|Y\right]$
+\begin_inset Formula $Var\left(X\midY\right)=E\left[\left(X-E\left[X\midY\right]\right)^{2}\midY\right]$
 \end_inset
 
 .
