@@ -232,7 +232,11 @@ fill}
 \begin_inset Formula $S$
 \end_inset
 
- נקראת סטציונרית אם 
+ נקראת 
+\series bold
+סטציונרית
+\series default
+ אם 
 \begin_inset Formula $\pi\cdot P=\pi$
 \end_inset
 
@@ -296,7 +300,11 @@ fill}
 \end_layout
 
 \begin_layout Definition*
-שרשרת היא הפיכה קיימת התפלגות 
+שרשרת היא 
+\series bold
+הפיכה
+\series default
+ אם קיימת התפלגות 
 \begin_inset Formula $\pi$
 \end_inset
 
