@@ -106,6 +106,15 @@ theorems-ams-extended
 \end_inset
 
 .
+ יתר על כן, לכל פונקציה 
+\begin_inset Formula $f:S\rightarrow\mathbb{R}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{1}{n}\sum_{s=0}E_{\mu}\left[f\left(X_{s}\right)\right]=\sum_{x\in S}f\left(x\right)\pi\left(x\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Definition
