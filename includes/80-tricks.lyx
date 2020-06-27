@@ -175,8 +175,8 @@ theorems-ams-extended
 \begin_inset Quotes erd
 \end_inset
 
-מ כך ש
-\begin_inset Formula $supp\left(N\right)\subset\mathbb{N}$
+מ כך ש-
+\begin_inset Formula $supp\left(N\right)\subseteq\mathbb{N}$
 \end_inset
 
  בלתי תלוי באחרים.
