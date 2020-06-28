@@ -189,7 +189,7 @@ theorems-ams-extended
 \end_inset
 
  וכן 
-\begin_inset Formula $Var\left(S\right)=Var\left(X\right)E\left[N\right]+E\left[X^{2}\right]Var\left(N\right)$
+\begin_inset Formula $Var\left(S\right)=Var\left(X\right)E\left[N\right]+E\left[X\right]^{2}Var\left(N\right)$
 \end_inset
 
 .
