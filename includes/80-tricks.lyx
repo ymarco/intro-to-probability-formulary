@@ -752,7 +752,11 @@ fill}
 \numeric on
 2
 \numeric off
- טריקים לחישוב שונות משותפת:
+ טריקים ל
+\series bold
+חישוב שונות משותפת
+\series default
+:
 \begin_inset Newline newline
 \end_inset
 
